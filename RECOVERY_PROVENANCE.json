@@ -973,6 +973,11 @@
       "path": "PUBLICATION_VALIDATION.json",
       "source": "Current publication tests and bounded demo checks; host paths removed",
       "sha256": "4346eee3b1c3b0fdaf5e84a20d9955a7cce1d1d63782763819ec4f122824731d"
+    },
+    {
+      "path": ".gitattributes",
+      "source": "Classify generated HTML reports/replays separately from implementation source",
+      "sha256": "3d1bf13d0024d17e3c629dd22c47b48ec42f282bbf84097ba807343f5d7d78a6"
     }
   ],
   "outer_recovery_archive_sha256": "42891ebb8609de343eb8210ca89636492ab4522f1a2ea0ada490586a4d3773b5",
