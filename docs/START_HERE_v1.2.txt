@@ -1,0 +1,44 @@
+DINO DUEL LAB 1.2 — 普通 PPO vs 多步 JEPA，淘汰制版本
+====================================================
+
+先看：elimination/report.html
+长回放：elimination/showcase/replay.html（按已决对局时长选择，不按赢家选择）
+权重：elimination/runs/{baseline,jepa}_seed{11,23,47}/policy.pt
+续训：同一目录的 latest.pt（含优化器、RNG、对手池与进行中对局）
+
+所有展示都是已经记录的真实模拟；HTML 离线打开，不需要安装或联网。
+不要把未决 / censored 当成平局或胜利。游戏本身没有倒计时。
+完整结论、局数和实际训练预算以 report.html、comparison.json 为准。
+
+以后有机器：在本项目根目录，使用 Python 3.11–3.13。
+1. python3 setup_env.py --backend cpu
+2. .venv/bin/python -m pytest -q   （需先 pip install pytest，或安装时加 --test）
+3. .venv/bin/python scripts/elimination_suite.py evaluate --out elimination --workers 3
+4. .venv/bin/python scripts/elimination_suite.py train --out elimination --updates 1500 --workers 3
+5. .venv/bin/python scripts/elimination_suite.py evaluate --out elimination --workers 3 --section all
+
+第4步会从300轮继续到1500轮，不是额外1500轮。无需 --resume。
+第3/5步有缓存，但权重/规则改变会使对应缓存失效。
+修改输出目录即可重新训练同一实验；不要用不同规则覆盖同一目录。
+
+Windows：.venv/bin/python 换成 .venv\Scripts\python.exe。
+Apple Silicon：安装选 --backend mps，训练可加 --device mps。
+NVIDIA：安装选 --backend cuda128（驱动兼容时），训练加 --device cuda。
+CPU 是本次实际测试的后端；GPU/MPS入口已有，但这里未实测其速度或确定性。
+
+单局回放（不训练）：
+.venv/bin/python run.py replay --left elimination/runs/jepa_seed11/policy.pt --right elimination/runs/baseline_seed11/policy.pt --use-checkpoint-env --sampling-mode joint --seconds 900 --out my_replay.html
+这个命令和主分析都同时采样攻击与跑跳。--sampling-mode attack 只采样攻击，
+--sampling-mode greedy 取最大概率。三个模式结果可能很不相同。
+
+更长观察：
+.venv/bin/python scripts/elimination_suite.py evaluate --out elimination --section extended --safety-seconds 900 --workers 3
+这是相同冻结模型与种子的重放，不是独立新增样本。
+
+停训：Ctrl+C 请求保存；或在某个 runs/<模型目录> 下创建 STOP 文件。
+续训前删除 STOP。不可直接拔电来代替保存；最近 latest.pt 可用于恢复。
+搬迁：整个项目和 elimination/ 一起复制。训练checkpoint包含基础跑跳权重。
+
+范围：结构化状态、JEPA风格的动作条件多步潜变量辅助预测；不是Meta预训练视觉模型，
+也没有推理时潜空间规划。两边都有PPO；“普通”指没有JEPA辅助目标。
+训练预算/行动参数匹配，不等于训练计算量匹配。

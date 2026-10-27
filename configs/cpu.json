@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "description": "Small reproducible CPU experiment; structured observations and a frozen common runner.",
+  "env": {"max_seconds": 60.0, "ensure_reachable": true, "min_gap_seconds": 0.30, "natural_obstacles": false,
+    "initial_speed": 7.5, "initial_speed_jitter": 0.5, "initial_coins": 0.0, "attack_every_n_steps": 6,
+    "attack_cooldown": 0.30},
+  "model": {"hidden": 128},
+  "training": {
+    "updates": 250,
+    "num_envs": 8,
+    "rollout_steps": 128,
+    "epochs": 4,
+    "minibatch_size": 256,
+    "lr": 0.0003,
+    "gamma": 0.995,
+    "gae_lambda": 0.95,
+    "clip_coef": 0.2,
+    "entropy_coef": 0.01,
+    "value_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "aux_coef": 0.1,
+    "ema_tau": 0.99,
+    "checkpoint_interval": 10,
+    "snapshot_interval": 25,
+    "opponent_pool_size": 8,
+    "device": "auto",
+    "torch_threads": 1,
+    "train_motor": false
+  },
+  "bootstrap": {
+    "samples": 24000,
+    "synthetic_samples": 60000,
+    "epochs": 40,
+    "hidden": 64,
+    "batch_size": 512,
+    "lr": 0.001,
+    "dagger_rounds": 2,
+    "dagger_steps": 12000,
+    "seed": 20261025
+  },
+  "evaluation": {
+    "seed_start": 4294967296,
+    "num_seeds": 30,
+    "bootstrap_samples": 2000
+  },
+  "experiment": {
+    "variants": ["baseline", "jepa", "jepa_shuffled"],
+    "seeds": [11, 23, 47],
+    "runner": "bundled",
+    "fixed_opponents": ["teacher:none", "teacher:random", "teacher:aggressive", "teacher:save"]
+  }
+}

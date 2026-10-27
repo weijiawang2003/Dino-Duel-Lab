@@ -1,0 +1,40 @@
+DINO DUEL LAB 1.1 — 已训练的 JEPA vs 普通 PPO
+
+现在直接看结果，不需要 Python、GPU 或网络：
+1. 打开 trained/index.html：总结、前后对照与数据下载。完整主分析表在 trained/final/report.html。
+2. 打开 trained/secondary_greedy/report.html：确定性出招的次要对比。
+3. 打开 trained/replay.html：两个训练后模型的真实对战回放。
+4. trained/RESULTS.md 解释实测结果及边界。
+
+已经训练好的模型：
+trained/runs/baseline_seed11/、baseline_seed23/、baseline_seed47/
+trained/runs/jepa_seed11/、jepa_seed23/、jepa_seed47/
+每个目录有 policy.pt（推理）、latest.pt（完整恢复）、initial_policy.pt、日志和配置。
+每个模型实际训练 614,400 个双人环境步，六个主模型合计 3,686,400 步。
+
+以后运行：
+1. 安装 Python 3.12，解压并进入本目录。
+2. python3 setup_env.py --backend cpu
+3. 用现成模型生成新对局，不必重训：
+   .venv/bin/python run.py replay --left trained/runs/baseline_seed11/policy.pt --right trained/runs/jepa_seed11/policy.pt --stochastic-attacks --use-checkpoint-env --seed 17179869184 --out runs/replay.html
+
+完整重做同一实验（可更改 --workers 控制同时训练的进程数）：
+   .venv/bin/python scripts/reproduce_comparison.py --workers 2 --out runs/reproduction
+中断后保持同样参数，加 --resume；若存在 STOP 文件，先删除。
+
+继续包内模型（建议先复制整个 trained 目录保留原结果）：
+   .venv/bin/python run.py train --config trained/runs/baseline_seed11/resume_config.json --variant baseline --seed 11 --out trained/runs/baseline_seed11 --resume --updates 600
+--updates 600 是累计 600 次更新，不是额外再加 600。
+
+Windows：将 .venv/bin/python 换成 .venv\Scripts\python.exe。
+Apple Silicon：安装时 --backend mps；NVIDIA：--backend cuda121 或 cuda124。
+本包实际训练与测试使用 Linux CPU。训练对比的默认 device=cpu。
+
+两边 PPO 的行动网络、初始权重、规则及环境步预算相同。
+JEPA 额外预测下一操作步的 latent 表示；推理时没有多步规划。
+此次跑跳网络共同冻结，训练增强的是攻击决策。
+主比较没有混入只对固定随机对手训练的诊断模型。
+
+README.md 有完整说明，docs/TRAINING_COMPARISON_PROTOCOL.md 有比较协议。
+examples/smoke/report.html 是旧版功能验证，不是本次正式训练结果。
+

@@ -1,0 +1,4 @@
+# Prefer setup_env.py so Linux CPU users get the much smaller CPU-only wheel.
+-r requirements-core.txt
+torch==2.10.0
+

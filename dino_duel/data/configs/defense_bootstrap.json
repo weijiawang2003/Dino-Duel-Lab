@@ -1,0 +1,39 @@
+{
+  "env": {
+    "dt": 0.016666666666666666,
+    "action_repeat": 4,
+    "initial_speed": 8.0,
+    "initial_speed_jitter": 1.0,
+    "max_speed": 13.0,
+    "acceleration": 0.0,
+    "max_seconds": null,
+    "gravity": 20.0,
+    "jump_velocity": 8.0,
+    "player_width": 0.7,
+    "standing_height": 1.25,
+    "duck_height": 0.55,
+    "coins_per_meter": 1.0,
+    "initial_coins": 0.0,
+    "wallet_cap": 60.0,
+    "attack_cooldown": 0.3,
+    "attack_every_n_steps": 6,
+    "attack_costs": [
+      0.0,
+      10.0,
+      16.0,
+      18.0,
+      12.0
+    ],
+    "spawn_distance": 22.0,
+    "reaction_time": 0.8,
+    "min_gap_seconds": 0.3,
+    "natural_interval_min": 1.8,
+    "natural_interval_max": 3.0,
+    "natural_obstacles": false,
+    "shaping_coef": 0.0,
+    "ensure_reachable": true
+  },
+  "seed": 20261026,
+  "rounds": 3,
+  "steps_per_round": 12000
+}

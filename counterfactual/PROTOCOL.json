@@ -1,0 +1,223 @@
+{
+  "schema": 1,
+  "source_archive_sha256": "b691398d11748cc28cbfa8cfafa971c6fe8629a39332ecf9c2cd223cb64eb9d7",
+  "env": {
+    "dt": 0.016666666666666666,
+    "action_repeat": 4,
+    "initial_speed": 8.0,
+    "initial_speed_jitter": 1.0,
+    "max_speed": 13.0,
+    "acceleration": 0.0,
+    "max_seconds": null,
+    "gravity": 20.0,
+    "jump_velocity": 8.0,
+    "player_width": 0.7,
+    "standing_height": 1.25,
+    "duck_height": 0.55,
+    "coins_per_meter": 1.0,
+    "initial_coins": 20.0,
+    "wallet_cap": 60.0,
+    "attack_cooldown": 0.3,
+    "attack_every_n_steps": 6,
+    "attack_costs": [
+      0.0,
+      10.0,
+      16.0,
+      18.0,
+      12.0
+    ],
+    "spawn_distance": 22.0,
+    "reaction_time": 0.8,
+    "min_gap_seconds": 0.3,
+    "natural_interval_min": 1.8,
+    "natural_interval_max": 3.0,
+    "natural_obstacles": false,
+    "shaping_coef": 0.0,
+    "ensure_reachable": true,
+    "wide_cactus_width": 2.2,
+    "wide_cactus_height": 1.2
+  },
+  "controller": "baseline_seed11",
+  "model_inputs": [
+    "public_observation",
+    "current_legal_mask",
+    "intended_own_macro"
+  ],
+  "opponent_reacts_in_each_branch": true,
+  "oracle_future_actions": false,
+  "motor_mode": "greedy",
+  "attack_mode": "sampled_common_random_tapes",
+  "plan_names": [
+    "ppo",
+    "wait",
+    "spaced_cactus",
+    "double_cactus",
+    "wide_pair",
+    "low_then_cactus",
+    "cactus_then_low",
+    "high_then_cactus",
+    "delayed_double",
+    "delayed_wide",
+    "alternating",
+    "late_low"
+  ],
+  "plans": [
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      3,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      4,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      2,
+      0,
+      2,
+      0,
+      0
+    ],
+    [
+      1,
+      3,
+      1,
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      3,
+      1,
+      0,
+      0
+    ]
+  ],
+  "horizons": [
+    30,
+    60,
+    120
+  ],
+  "counts": {
+    "train": 512,
+    "valid": 96,
+    "test": 128,
+    "ood": 128
+  },
+  "repeats": {
+    "train": 3,
+    "valid": 8,
+    "test": 8,
+    "ood": 8
+  },
+  "source_policy_hashes": {
+    "baseline_seed11": "91ddd0db8057164bba1e448aaa0e6e2462a957e3ba667f0c16f982d66c8bd83d",
+    "jepa_seed11": "c88b3aaf771e3ca1593d945e61f16e86590be2a6ea19b82235936812d3db5ae1",
+    "baseline_seed23": "1f14e7c40e25f2785c7d35755cb0920d493ffbe510a5322d38e13f62e748942a",
+    "jepa_seed23": "04bceb23258697cd817dbeacfdc07ad241e2767b11bfe53e49d147ed0802184f",
+    "baseline_seed47": "577d87bb9cde1e42626ae7b34fe8f8ea3fbead1f87443b404da30383ed321561",
+    "jepa_seed47": "0ab47930e994906ceb7b1290f884e0831a2c8c686adca17333fad2bf81c31ab2"
+  },
+  "source_code_sha256": "292e9ad472e1251fe796a38cda65059085bc8f327632f79a18aeb3520d336ef8",
+  "new_training_seeds": [
+    101,
+    202,
+    303
+  ],
+  "warmup_steps": 360,
+  "selection": "Minimum validation outcome NLL; test/ood never select epochs or hyperparameters.",
+  "score": "P(win within 8s) - P(loss within 8s). Ongoing remains separately reported, NOT a draw.",
+  "sampling_unit": "One snapshot per source episode, all its branches remain in one split.",
+  "oracle": "Empirical oracle uses first half repeats to select; evaluate on second half. Full-max is only optimistic ceiling.",
+  "scope": "Frozen trained-policy population, attack macros only. Downstream predictor restarts are NOT independent full RL training repetitions."
+}

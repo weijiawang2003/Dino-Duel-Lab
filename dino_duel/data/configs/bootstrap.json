@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "description": "Reproduce original basic runner training: conservative natural obstacles and teacher labels.",
+  "env": {"max_seconds": 90.0, "ensure_reachable": false, "min_gap_seconds": 0.90, "natural_obstacles": true,
+    "initial_speed": 7.0, "initial_speed_jitter": 0.0, "initial_coins": 0.0, "attack_every_n_steps": 1,
+    "attack_cooldown": 0.65},
+  "experiment": {"runner": "teacher"}
+}

@@ -1,0 +1,371 @@
+{
+  "frozen_at_utc": "2026-10-26T04:55:30.071909+00:00",
+  "selections": {
+    "advantage_only": {
+      "threshold": 2.1,
+      "penalty": 1.0,
+      "validation": {
+        "threshold": 2.1,
+        "switches": 0,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "lower90": 0.0
+      },
+      "weights": {
+        "paired_advantage/models/advantage_only_seed101/best.pt": "d937fc9654e24310bdcc8d09a95bcdfdefce4cc4d81c351371093ec4f55ff00e",
+        "paired_advantage/models/advantage_only_seed202/best.pt": "e86168a56f767e68bff0df3844e8e6ca912698d85f9240986e8e36977f0e74db",
+        "paired_advantage/models/advantage_only_seed303/best.pt": "6136aa291df6a6dc348d95e3dfdb2c568c6d968c409f73d6c34ea3eaca20cb96"
+      }
+    },
+    "latent_aux": {
+      "threshold": 2.1,
+      "penalty": 1.0,
+      "validation": {
+        "threshold": 2.1,
+        "switches": 0,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "lower90": 0.0
+      },
+      "weights": {
+        "paired_advantage/models/latent_aux_seed101/best.pt": "b83ecd2c24dc39544ce8ed31b6614d7990ab9528dde2c985dabd751a47a51ab7",
+        "paired_advantage/models/latent_aux_seed202/best.pt": "9f9d404dfce04e3e450235f31f21ebda92106704fc70db1810dc226a6b168125",
+        "paired_advantage/models/latent_aux_seed303/best.pt": "5f2c2c6aacc8a5bde7dd51757773a632220792c5c2e299a75b871e7db855369b"
+      }
+    },
+    "state_aux": {
+      "threshold": 2.1,
+      "penalty": 1.0,
+      "validation": {
+        "threshold": 2.1,
+        "switches": 0,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "lower90": 0.0
+      },
+      "weights": {
+        "paired_advantage/models/state_aux_seed101/best.pt": "ee67b949686e7a0a5e8f2686ad4f1e228d30fa0c40975eb87163f49c3c2b7a6e",
+        "paired_advantage/models/state_aux_seed202/best.pt": "ff90cf7920a18c796c6161034a21ca883d94f88b0c75017acafe224f27fddde1",
+        "paired_advantage/models/state_aux_seed303/best.pt": "fbd1656191ce581cd7a450c0028dcf2a8e8f81c00db60c4b2e1c71508f5e9031"
+      }
+    }
+  },
+  "validation_details": {
+    "advantage_only": {
+      "gate_trials": [
+        {
+          "threshold": 0,
+          "switches": 37,
+          "mean": -0.028645833333333332,
+          "ci95": [
+            -0.0625,
+            0.00390625
+          ],
+          "lower90": -0.05078125
+        },
+        {
+          "threshold": 0.05,
+          "switches": 0,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "lower90": 0.0
+        },
+        {
+          "threshold": 0.1,
+          "switches": 0,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "lower90": 0.0
+        },
+        {
+          "threshold": 0.2,
+          "switches": 0,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "lower90": 0.0
+        },
+        {
+          "threshold": 0.3,
+          "switches": 0,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "lower90": 0.0
+        },
+        {
+          "threshold": 0.5,
+          "switches": 0,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "lower90": 0.0
+        },
+        {
+          "threshold": 2.1,
+          "switches": 0,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "lower90": 0.0
+        }
+      ],
+      "raw": {
+        "mean": -0.06510416666666667,
+        "ci95": [
+          -0.10416666666666667,
+          -0.032552083333333336
+        ],
+        "lower90": -0.08854166666666667
+      },
+      "raw_switches": 47,
+      "raw_plan_counts": [
+        0,
+        49,
+        0,
+        0,
+        0,
+        0,
+        0,
+        31,
+        7,
+        0,
+        9,
+        0
+      ]
+    },
+    "latent_aux": {
+      "gate_trials": [
+        {
+          "threshold": 0,
+          "switches": 16,
+          "mean": -0.0026041666666666665,
+          "ci95": [
+            -0.015625,
+            0.010416666666666666
+          ],
+          "lower90": -0.010416666666666666
+        },
+        {
+          "threshold": 0.05,
+          "switches": 0,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "lower90": 0.0
+        },
+        {
+          "threshold": 0.1,
+          "switches": 0,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "lower90": 0.0
+        },
+        {
+          "threshold": 0.2,
+          "switches": 0,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "lower90": 0.0
+        },
+        {
+          "threshold": 0.3,
+          "switches": 0,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "lower90": 0.0
+        },
+        {
+          "threshold": 0.5,
+          "switches": 0,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "lower90": 0.0
+        },
+        {
+          "threshold": 2.1,
+          "switches": 0,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "lower90": 0.0
+        }
+      ],
+      "raw": {
+        "mean": -0.0390625,
+        "ci95": [
+          -0.07291666666666667,
+          -0.009114583333333334
+        ],
+        "lower90": -0.059895833333333336
+      },
+      "raw_switches": 34,
+      "raw_plan_counts": [
+        0,
+        62,
+        0,
+        0,
+        0,
+        0,
+        0,
+        20,
+        6,
+        0,
+        8,
+        0
+      ]
+    },
+    "state_aux": {
+      "gate_trials": [
+        {
+          "threshold": 0,
+          "switches": 31,
+          "mean": -0.0234375,
+          "ci95": [
+            -0.055989583333333336,
+            0.006510416666666667
+          ],
+          "lower90": -0.044270833333333336
+        },
+        {
+          "threshold": 0.05,
+          "switches": 0,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "lower90": 0.0
+        },
+        {
+          "threshold": 0.1,
+          "switches": 0,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "lower90": 0.0
+        },
+        {
+          "threshold": 0.2,
+          "switches": 0,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "lower90": 0.0
+        },
+        {
+          "threshold": 0.3,
+          "switches": 0,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "lower90": 0.0
+        },
+        {
+          "threshold": 0.5,
+          "switches": 0,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "lower90": 0.0
+        },
+        {
+          "threshold": 2.1,
+          "switches": 0,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "lower90": 0.0
+        }
+      ],
+      "raw": {
+        "mean": -0.037760416666666664,
+        "ci95": [
+          -0.07552083333333333,
+          -0.00390625
+        ],
+        "lower90": -0.061197916666666664
+      },
+      "raw_switches": 40,
+      "raw_plan_counts": [
+        0,
+        56,
+        0,
+        0,
+        0,
+        0,
+        0,
+        20,
+        11,
+        0,
+        9,
+        0
+      ]
+    }
+  },
+  "global_train_best": 1,
+  "plan_names": [
+    "ppo",
+    "wait",
+    "spaced_cactus",
+    "double_cactus",
+    "wide_pair",
+    "low_then_cactus",
+    "cactus_then_low",
+    "high_then_cactus",
+    "delayed_double",
+    "delayed_wide",
+    "alternating",
+    "late_low"
+  ],
+  "note": "All choices use train/validation only. Threshold selection is not a formal safe-policy guarantee."
+}

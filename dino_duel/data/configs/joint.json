@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "description": "Joint motor + attack learning from a common behavior-cloned runner.",
+  "training": {"train_motor": true, "updates": 500},
+  "experiment": {"runner": "bundled", "variants": ["baseline", "jepa", "jepa_shuffled"],
+    "seeds": [11, 23, 47]}
+}

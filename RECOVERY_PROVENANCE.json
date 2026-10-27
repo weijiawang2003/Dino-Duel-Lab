@@ -1,0 +1,985 @@
+{
+  "source": "User-provided Dino Duel Lab recovery bundle from ChatGPT cloud conversation; v1.3 overlaid with latest paired_advantage source/evidence",
+  "source_original_unchanged": true,
+  "files": [
+    {
+      "path": "dino_duel/counterfactual_models.py",
+      "sha256": "c270cc8b5cb7efcd61c4ec5a575df5f487ffbcc20e8f268ea29461fa5aeb23b4",
+      "bytes": 3426,
+      "source_relative_path": "dino_duel/counterfactual_models.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/bootstrap.py",
+      "sha256": "2edfa276154e06727e7655c0e1141bcb2278222392ed69ba10c5ab78cc274daa",
+      "bytes": 8936,
+      "source_relative_path": "dino_duel/bootstrap.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/env.py",
+      "sha256": "824ba239644e4bf636adb2e7ff33f3397d89703a0b1354693029c2f6ced164e4",
+      "bytes": 32197,
+      "source_relative_path": "dino_duel/env.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/teacher.py",
+      "sha256": "a8540e246f8c4608ce1f6782fa43726bdf95cd72f7eae626c4f9d190d65e92ba",
+      "bytes": 4008,
+      "source_relative_path": "dino_duel/teacher.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/models.py",
+      "sha256": "7e544828c4a70768569f9e218c9e816b3463d0b37f9c8dc1b1592cd3b7d6f109",
+      "bytes": 14775,
+      "source_relative_path": "dino_duel/models.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/evaluation.py",
+      "sha256": "aa3af002073abffb4a1274b75635569f5f236b5952c3c327bc966a42de67ed03",
+      "bytes": 15666,
+      "source_relative_path": "dino_duel/evaluation.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/paired_control.py",
+      "sha256": "a206ad4a066eb957c0899c744cfc3c52a5c258676396216c652cc5e633815350",
+      "bytes": 2333,
+      "source_relative_path": "dino_duel/paired_control.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/__init__.py",
+      "sha256": "e8f53b135fb7fa9227d15190213963e5f95b6c9348a86c34f120c00e441e5940",
+      "bytes": 99,
+      "source_relative_path": "dino_duel/__init__.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/counterfactual.py",
+      "sha256": "292e9ad472e1251fe796a38cda65059085bc8f327632f79a18aeb3520d336ef8",
+      "bytes": 8205,
+      "source_relative_path": "dino_duel/counterfactual.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/experiment.py",
+      "sha256": "95c2853cc2ff8c8e0dc03db500ae94f39b3b8005944b41645ac6edbe6ffaf36b",
+      "bytes": 16332,
+      "source_relative_path": "dino_duel/experiment.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/replay.py",
+      "sha256": "86c5d25bc8156f9c1c8e27b8246092e84178bdc8ece230c9c50e1704eee55f9e",
+      "bytes": 12479,
+      "source_relative_path": "dino_duel/replay.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/cli.py",
+      "sha256": "032b4181ed1965aaefa24e5a77752b6a6cc35c291a04326a8abceb068cb32edc",
+      "bytes": 15176,
+      "source_relative_path": "dino_duel/cli.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/utils.py",
+      "sha256": "9d5f7708f674eab7f507d2bdef4ac77243431b45be5c32e54b327d5634182547",
+      "bytes": 3307,
+      "source_relative_path": "dino_duel/utils.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/macro_planner.py",
+      "sha256": "a6f68d898234b86f0b3196cda5c04ea3126b4f9420627e167c267611a3a11b76",
+      "bytes": 3521,
+      "source_relative_path": "dino_duel/macro_planner.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/upstream.py",
+      "sha256": "a5b403ceb7a9505253d120961f965d719adf765e58ff5cc62eee58937bef56ad",
+      "bytes": 8947,
+      "source_relative_path": "dino_duel/upstream.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/learning.py",
+      "sha256": "ec6164193059a79edd19313ceb91a542765a736122a307625ae801a8b673ea05",
+      "bytes": 47942,
+      "source_relative_path": "dino_duel/learning.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/policies.py",
+      "sha256": "f4b5fa16e96058a28047f40140bd638997055af67bfac81366709173af9ea49a",
+      "bytes": 8174,
+      "source_relative_path": "dino_duel/policies.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/__main__.py",
+      "sha256": "76fa916e93e0ae1a6c1bb51dcc0bcf289c014e9f760a47165f8a84401ccf41d7",
+      "bytes": 49,
+      "source_relative_path": "dino_duel/__main__.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/report.py",
+      "sha256": "010f0b18367a8f883b2914960cd17f3c8294da767e3eff47611775254d98b0b3",
+      "bytes": 16075,
+      "source_relative_path": "dino_duel/report.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/paired_advantage.py",
+      "sha256": "0fd7fa4e0212d96168f568e4a79bdaa026a331bb52ed33f0012e606119b37d74",
+      "bytes": 3844,
+      "source_relative_path": "dino_duel/paired_advantage.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/adversaries.py",
+      "sha256": "9c9f75715a6484028f3746fafc2241c4a7fdd9d2460f90fc2f2651e00b042ce1",
+      "bytes": 1608,
+      "source_relative_path": "dino_duel/adversaries.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/data/configs/elimination.json",
+      "sha256": "ae9dd82f096c1de95c26f776825d5a411c8a92a61942c87604c24b475508ccd0",
+      "bytes": 2940,
+      "source_relative_path": "dino_duel/data/configs/elimination.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/data/configs/joint.json",
+      "sha256": "2abcb46353653a4a2a758d482298c2fff34b28ce6ab5f9999f46cdaf1ed632f4",
+      "bytes": 284,
+      "source_relative_path": "dino_duel/data/configs/joint.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/data/configs/elimination_nonlinear.json",
+      "sha256": "c550c4da257e0242cea45213525e7284aa11ef39edfb9ab688f392a8e7be6af0",
+      "bytes": 2914,
+      "source_relative_path": "dino_duel/data/configs/elimination_nonlinear.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/data/configs/trained_random.json",
+      "sha256": "57b53fb50d470a6620f18cd8dd4c0340443624bc746265208e9db127d417bc7e",
+      "bytes": 979,
+      "source_relative_path": "dino_duel/data/configs/trained_random.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/data/configs/trained_strength.json",
+      "sha256": "4ee538f1ffe51e502457029c47e29089c8399168a8946e0637060caa6eac0834",
+      "bytes": 985,
+      "source_relative_path": "dino_duel/data/configs/trained_strength.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/data/configs/cpu.json",
+      "sha256": "cf187c17fdf7708e123ddc4e48e1228ec1934d7b5fe101e3fa54e91604446d09",
+      "bytes": 1450,
+      "source_relative_path": "dino_duel/data/configs/cpu.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/data/configs/defense_bootstrap.json",
+      "sha256": "79f6ede82af722adf77180f2b704ff01bbee17a9b4ffa9c365db7abf4ff7d916",
+      "bytes": 853,
+      "source_relative_path": "dino_duel/data/configs/defense_bootstrap.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/data/configs/smoke.json",
+      "sha256": "d298bd661c02878bc4e87816abb96f12f526a0efbdb765abd5f2b1cf834f211a",
+      "bytes": 751,
+      "source_relative_path": "dino_duel/data/configs/smoke.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/data/configs/standard.json",
+      "sha256": "2350e9454697e3326558b214d9f6425358a1c1274acf629e9369402f9f7bd508",
+      "bytes": 508,
+      "source_relative_path": "dino_duel/data/configs/standard.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/data/configs/tight.json",
+      "sha256": "4cebf756ca6f29bd7bc4bd15d5ae27c8fb370fca720daddaa17643834cd92cf4",
+      "bytes": 315,
+      "source_relative_path": "dino_duel/data/configs/tight.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/data/configs/bootstrap.json",
+      "sha256": "c1fe2ae4873ac9a2e3bd4b5c32ae31f20a65e0797fcf3e234a0d11a4350e2034",
+      "bytes": 422,
+      "source_relative_path": "dino_duel/data/configs/bootstrap.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/data/assets/runner_bc.npz",
+      "sha256": "9f072aecf2e6785a439b541761d2b191ade467279c9885fb043909326139e7b9",
+      "bytes": 24394,
+      "source_relative_path": "dino_duel/data/assets/runner_bc.npz",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/data/assets/runner_bc.json",
+      "sha256": "be8b20d852fee68316d627683dc00d06bd93e1e72c7c1c63aa7996e249b9c2aa",
+      "bytes": 23811,
+      "source_relative_path": "dino_duel/data/assets/runner_bc.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "dino_duel/data/assets/runner_adversarial.npz",
+      "sha256": "714fc8918c2c5d9bf256a0ddc91e8ec905ebf25ca8fab34514faa78b70307a85",
+      "bytes": 23762,
+      "source_relative_path": "dino_duel/data/assets/runner_adversarial.npz",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "tests/test_training_decisions.py",
+      "sha256": "10bed3d5058a49a2b5c713c6039c4a55749bf6e3de15c852acf2b8679cebe7f2",
+      "bytes": 5247,
+      "source_relative_path": "tests/test_training_decisions.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "tests/test_paired_advantage.py",
+      "sha256": "da55c5ce91abba3642ee017597df84030e7f3c9c42761c220de2bf7841604f70",
+      "bytes": 5716,
+      "source_relative_path": "tests/test_paired_advantage.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "tests/test_env.py",
+      "sha256": "4c98abbd3f98a601547b17cc445a2b36669be1eee207b9688acff7c2fb46b9ce",
+      "bytes": 13103,
+      "source_relative_path": "tests/test_env.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "tests/test_learning.py",
+      "sha256": "6dd7309de24393b8c0f45f77b097ea3379544de6d7bc914a5484e764fdef6530",
+      "bytes": 9409,
+      "source_relative_path": "tests/test_learning.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "tests/test_evaluation.py",
+      "sha256": "7c7e13cb788daeb6582b32f098a72694d9715bea69f86f78edc73e75af3b81bd",
+      "bytes": 7262,
+      "source_relative_path": "tests/test_evaluation.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "tests/test_elimination.py",
+      "sha256": "5760be5204d2a66a16fad9dc18d2fe937fd8b5b03b1492518517178634fe58b2",
+      "bytes": 7383,
+      "source_relative_path": "tests/test_elimination.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "tests/test_counterfactual.py",
+      "sha256": "0ac239c78e2ad91569b28bc08e428f5c6fbb104cea6e6be9cea73d3fadc74219",
+      "bytes": 8106,
+      "source_relative_path": "tests/test_counterfactual.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "tests/test_project.py",
+      "sha256": "12acdd785d5ec40dbeada4c1b89330671748db61b6bdbea2537409b331deba3f",
+      "bytes": 10520,
+      "source_relative_path": "tests/test_project.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "tests/test_stochastic_policy.py",
+      "sha256": "9f3a5371661856359670f224e55aa2eeba5f40634e492829855c354addf5e39f",
+      "bytes": 2718,
+      "source_relative_path": "tests/test_stochastic_policy.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "tests/test_comparison_statistics.py",
+      "sha256": "2cdd3ed5675fa0908b0698fbeeb380e750512ab2e5e9a0fd43850f8bbe74ef70",
+      "bytes": 1453,
+      "source_relative_path": "tests/test_comparison_statistics.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "docs/METHOD.md",
+      "sha256": "b5c5a21ffcb5538b75ec54c8706c77aaa74695e048d219feaf72ef15697d58f3",
+      "bytes": 13843,
+      "source_relative_path": "docs/METHOD.md",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "docs/COUNTERFACTUAL_METHOD.md",
+      "sha256": "8aa2ce9f2d7733378fe87785e9bd72e30d821f5d8f4079392e2b23465f953470",
+      "bytes": 9759,
+      "source_relative_path": "docs/COUNTERFACTUAL_METHOD.md",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "docs/START_HERE_v1.2.txt",
+      "sha256": "ed74aa4637913bdd0d105c51dca31c27c4ebe718f1c19b7fd6af7f1574ed59e4",
+      "bytes": 2929,
+      "source_relative_path": "docs/START_HERE_v1.2.txt",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "docs/THIRD_PARTY.md",
+      "sha256": "d6e79d77ad69a9c67d590a96b9b2176e51aea5b8b3c31fc75488f5d1bef778ad",
+      "bytes": 3130,
+      "source_relative_path": "docs/THIRD_PARTY.md",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "docs/GAME_RULES.md",
+      "sha256": "1a0cff4698575499fddf309eb610b286b2604a7a521d6dc832c43badf253328e",
+      "bytes": 11222,
+      "source_relative_path": "docs/GAME_RULES.md",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "docs/COMMANDS.md",
+      "sha256": "819e988adc0b433dafc81a478f3b400f7cfc3a2b1a3f4c14aa66662e18be016d",
+      "bytes": 11133,
+      "source_relative_path": "docs/COMMANDS.md",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "sha256": "84e410acbee4c6782a1f6562c632bf1d9cc28129c23378fe181e4a732632dfcc",
+      "bytes": 3166,
+      "source_relative_path": "docs/VALIDATION.md",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "docs/ELIMINATION_METHOD.md",
+      "sha256": "05db9536fe0222cc8538fcbdccc04251f45d8f6b02ef98536406b78923625068",
+      "bytes": 7978,
+      "source_relative_path": "docs/ELIMINATION_METHOD.md",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "docs/TRAINING_COMPARISON_PROTOCOL.md",
+      "sha256": "1197ffafa73a86b007ef40d135814de01db359833d5b6f0c3658b47ab034947a",
+      "bytes": 12367,
+      "source_relative_path": "docs/TRAINING_COMPARISON_PROTOCOL.md",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "docs/CHANGELOG_1.2.md",
+      "sha256": "25c45f3863d1da0e90d958dfc27e846d77e05e4481f7061929dec50bc9a4e945",
+      "bytes": 1371,
+      "source_relative_path": "docs/CHANGELOG_1.2.md",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "docs/archive-v1.1/VALIDATION.md",
+      "sha256": "7908e2f1eaacfb3ae54b36d71f4e1e4c08be230931c311363cbe1284ca3062d4",
+      "bytes": 5381,
+      "source_relative_path": "docs/archive-v1.1/VALIDATION.md",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "docs/archive-v1.1/START_HERE.txt",
+      "sha256": "f840466c9c62383d5e067d90f66dfad288cc609677a8c3c25a77ff115f7b7d44",
+      "bytes": 2452,
+      "source_relative_path": "docs/archive-v1.1/START_HERE.txt",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "docs/archive-v1.1/README.md",
+      "sha256": "1ae33e01a73e42992db5f3fadee8ad4a20eb123facc6f39a65b34279092bf51f",
+      "bytes": 14186,
+      "source_relative_path": "docs/archive-v1.1/README.md",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "configs/elimination.json",
+      "sha256": "ae9dd82f096c1de95c26f776825d5a411c8a92a61942c87604c24b475508ccd0",
+      "bytes": 2940,
+      "source_relative_path": "configs/elimination.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "configs/joint.json",
+      "sha256": "2abcb46353653a4a2a758d482298c2fff34b28ce6ab5f9999f46cdaf1ed632f4",
+      "bytes": 284,
+      "source_relative_path": "configs/joint.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "configs/elimination_nonlinear.json",
+      "sha256": "c550c4da257e0242cea45213525e7284aa11ef39edfb9ab688f392a8e7be6af0",
+      "bytes": 2914,
+      "source_relative_path": "configs/elimination_nonlinear.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "configs/trained_random.json",
+      "sha256": "57b53fb50d470a6620f18cd8dd4c0340443624bc746265208e9db127d417bc7e",
+      "bytes": 979,
+      "source_relative_path": "configs/trained_random.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "configs/trained_strength.json",
+      "sha256": "4ee538f1ffe51e502457029c47e29089c8399168a8946e0637060caa6eac0834",
+      "bytes": 985,
+      "source_relative_path": "configs/trained_strength.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "configs/cpu.json",
+      "sha256": "cf187c17fdf7708e123ddc4e48e1228ec1934d7b5fe101e3fa54e91604446d09",
+      "bytes": 1450,
+      "source_relative_path": "configs/cpu.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "configs/defense_bootstrap.json",
+      "sha256": "79f6ede82af722adf77180f2b704ff01bbee17a9b4ffa9c365db7abf4ff7d916",
+      "bytes": 853,
+      "source_relative_path": "configs/defense_bootstrap.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "configs/smoke.json",
+      "sha256": "d298bd661c02878bc4e87816abb96f12f526a0efbdb765abd5f2b1cf834f211a",
+      "bytes": 751,
+      "source_relative_path": "configs/smoke.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "configs/standard.json",
+      "sha256": "2350e9454697e3326558b214d9f6425358a1c1274acf629e9369402f9f7bd508",
+      "bytes": 508,
+      "source_relative_path": "configs/standard.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "configs/tight.json",
+      "sha256": "4cebf756ca6f29bd7bc4bd15d5ae27c8fb370fca720daddaa17643834cd92cf4",
+      "bytes": 315,
+      "source_relative_path": "configs/tight.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "configs/bootstrap.json",
+      "sha256": "c1fe2ae4873ac9a2e3bd4b5c32ae31f20a65e0797fcf3e234a0d11a4350e2034",
+      "bytes": 422,
+      "source_relative_path": "configs/bootstrap.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "scripts/counterfactual_suite.py",
+      "sha256": "91413315a4ca0ded0f90498965c94570d242b2de57161a4cbe8a4b9ea3f8403e",
+      "bytes": 6047,
+      "source_relative_path": "scripts/counterfactual_suite.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "scripts/paired_tree_diagnostic.py",
+      "sha256": "b2cc89410bb1eefc999057a3f7bb59da6ac03c0462729ecd03deb22499d58d6b",
+      "bytes": 2558,
+      "source_relative_path": "scripts/paired_tree_diagnostic.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "scripts/paired_advantage_suite.py",
+      "sha256": "ec243dafb56e063bbbe91cac32849f89de64631c031806042b8072a45a157853",
+      "bytes": 18007,
+      "source_relative_path": "scripts/paired_advantage_suite.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "scripts/paired_cases.py",
+      "sha256": "9f20d0741742cb25b01fb40437c5effc703aa198d2a3b678d7a8fd14732f5527",
+      "bytes": 3292,
+      "source_relative_path": "scripts/paired_cases.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "scripts/validate_counterfactual_release.py",
+      "sha256": "cdac92a696f8edcb3e55b2e9e9b63985a7ab228dea1d7265144fb77560e6eb14",
+      "bytes": 4790,
+      "source_relative_path": "scripts/validate_counterfactual_release.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "scripts/elimination_suite.py",
+      "sha256": "a2993cf13338503c4509521931f42655bb6953256ab63ccd068e0d74d85c72c9",
+      "bytes": 9296,
+      "source_relative_path": "scripts/elimination_suite.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "scripts/evaluate_counterfactual.py",
+      "sha256": "33991159ddf1dd4ea4c686f32f4473aa96e1208642624e9e5e4981662faf735f",
+      "bytes": 8260,
+      "source_relative_path": "scripts/evaluate_counterfactual.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "scripts/bootstrap_adversarial.py",
+      "sha256": "ac75974bde954f7365472ebbce302c023ee80b3b0ee41fb98a4eca0fbd22d908",
+      "bytes": 4689,
+      "source_relative_path": "scripts/bootstrap_adversarial.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "scripts/make_training_overview.py",
+      "sha256": "cb640ddc932b8038b398a591b6b2daa1a9064d8abc8a0135e3ef69bf239528bb",
+      "bytes": 9978,
+      "source_relative_path": "scripts/make_training_overview.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "scripts/play_counterfactual.py",
+      "sha256": "168cf557c5b52b5261067c8ed34df2d129619737b438ff0916a28c9e80a81a5d",
+      "bytes": 2028,
+      "source_relative_path": "scripts/play_counterfactual.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "scripts/counterfactual_cases.py",
+      "sha256": "6ff62378902dbad743098e2aef9586d5f83e00fb58ff7eb84bbfa9230a3a61ca",
+      "bytes": 3687,
+      "source_relative_path": "scripts/counterfactual_cases.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "scripts/export_standalone.py",
+      "sha256": "4b86c38290ca05ceeba3aee4189127de3e707bba3f2545ad503ba17063f2f0ba",
+      "bytes": 3045,
+      "source_relative_path": "scripts/export_standalone.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "scripts/train_elimination_worker.py",
+      "sha256": "cfe3c911b8e0efa7177623503c215f142c9ed8de3223b0c6fb81400d64622ed1",
+      "bytes": 884,
+      "source_relative_path": "scripts/train_elimination_worker.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "scripts/audit_counterfactual_rules.py",
+      "sha256": "86415a56473f88280b98cb8c6ab551e4c79220f59e6e204508ae5c751213f467",
+      "bytes": 1808,
+      "source_relative_path": "scripts/audit_counterfactual_rules.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "scripts/evaluate_prediction.py",
+      "sha256": "8f1b55e5f654b8648112248ae3f7ceb3ce28d2f91f8312484e230d81453804a6",
+      "bytes": 5983,
+      "source_relative_path": "scripts/evaluate_prediction.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "scripts/paired_report.py",
+      "sha256": "85cb166c5cfd1f02f5f4c729fb1f016c68027b5a08804331cca3bc9a1762a2da",
+      "bytes": 15256,
+      "source_relative_path": "scripts/paired_report.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "scripts/elimination_report.py",
+      "sha256": "65a6474bb70cce2c694b5dfc903b2da71762294086f6e5c20a92f5470a573105",
+      "bytes": 16995,
+      "source_relative_path": "scripts/elimination_report.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "scripts/run_assistant_experiment.py",
+      "sha256": "3292a32ea957e63a92c9aa0d33c558ef163964c0bea4bc3db12ae79d15f4cc01",
+      "bytes": 2027,
+      "source_relative_path": "scripts/run_assistant_experiment.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "scripts/validate_elimination.py",
+      "sha256": "d7c8cafc7a558b61b902d0b20025fbd390233ac69b807c5c9fd8e4a3c12392bb",
+      "bytes": 4453,
+      "source_relative_path": "scripts/validate_elimination.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "scripts/run_counterfactual.py",
+      "sha256": "063889f735717cd96cea689e8a9b3b52dc6ea7167a51bc8b5188d4469f41fb36",
+      "bytes": 1834,
+      "source_relative_path": "scripts/run_counterfactual.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "scripts/evaluate_planning.py",
+      "sha256": "52acea3e996a01803bed3f06e88be80e69670dd993e2ee4ce70d2a022b54f506",
+      "bytes": 5121,
+      "source_relative_path": "scripts/evaluate_planning.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "scripts/evaluate_trained.py",
+      "sha256": "ccbefb6042519c6cd3506723985ea0c091b4c57cd7850563372193b37c58345b",
+      "bytes": 18780,
+      "source_relative_path": "scripts/evaluate_trained.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "scripts/make_elimination_showcase.py",
+      "sha256": "ce5b490a68be46f806c087ddc169baa20b5d60716a60a235dfcc8c54d1952938",
+      "bytes": 3434,
+      "source_relative_path": "scripts/make_elimination_showcase.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "scripts/train_counterfactual.py",
+      "sha256": "67d3d9420be83f6f2c07376feaa06e578aa415494fe6fc2e019085248ad377e5",
+      "bytes": 10647,
+      "source_relative_path": "scripts/train_counterfactual.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "scripts/paired_online.py",
+      "sha256": "1bf614a8389fe2587d00d53ab4b3ca9844d7cbfe480ad09a5fed87e6fca5409f",
+      "bytes": 8018,
+      "source_relative_path": "scripts/paired_online.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "scripts/reproduce_comparison.py",
+      "sha256": "0e6ea4481112ec5768982ff9eb89c630472856b057758db711e206292c8013b0",
+      "bytes": 15454,
+      "source_relative_path": "scripts/reproduce_comparison.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "scripts/counterfactual_report.py",
+      "sha256": "11e8e7bb14d47f3e0ba5d8c3eafc1152249baf3d16ed446c3b9b1aa40ff65b20",
+      "bytes": 13463,
+      "source_relative_path": "scripts/counterfactual_report.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "scripts/compare_trained.py",
+      "sha256": "34f996ff4dd0e2cb907082f71d53692aaed3b6bcbb108ebc89f8fd60693a1d88",
+      "bytes": 24216,
+      "source_relative_path": "scripts/compare_trained.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "scripts/validate_paired_run.py",
+      "sha256": "235856540fa1fa6815f4df37ac64818b9153c0425f8c07dbbdf3ecff553c4f21",
+      "bytes": 3686,
+      "source_relative_path": "scripts/validate_paired_run.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "50712dc17d9316e5f7ccbee62734069bcfbd2da5bcf1cfaafea2a46c774e53a8",
+      "bytes": 1084,
+      "source_relative_path": "LICENSE",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "docs/RECOVERED_ARCHIVE_README.md",
+      "sha256": "f2775a7abf7e704188f3fbd06aaf1a410542e869dad1a4911d3774f8a4411b29",
+      "bytes": 8736,
+      "source_relative_path": "README.md",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "41530c21798f94891e6ddbacb8e80d898c8589e303c01a1e0b29b2bcd41c0291",
+      "bytes": 781,
+      "source_relative_path": "pyproject.toml",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "run.py",
+      "sha256": "6930b7c8b08c7b35fcac574b3b3b6b47bc5867abe15a5fbe9cdbd3d954f4c17a",
+      "bytes": 190,
+      "source_relative_path": "run.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "setup_env.py",
+      "sha256": "6943487f287e83212a4c86433c363d57c5240674e6a462906a79839e6dea6767",
+      "bytes": 2695,
+      "source_relative_path": "setup_env.py",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "requirements-core.txt",
+      "sha256": "6d05d8c952ee43403f4f60f0e3f18a8d7685ae0668fd965cabd403bb000f8f34",
+      "bytes": 14,
+      "source_relative_path": "requirements-core.txt",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "7dda7b39d239f3da8676c6822eecdcfc1660ea70e3e6eaa6e03e2db2c57aec77",
+      "bytes": 118,
+      "source_relative_path": "requirements.txt",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "requirements-assistant-run.txt",
+      "sha256": "5eefd019c5479bea1664336963294859717fe35813fa5756293824851b012024",
+      "bytes": 104,
+      "source_relative_path": "requirements-assistant-run.txt",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "requirements-upstream.txt",
+      "sha256": "aed0485095266046527163ffbea907fc73bfa03dd19ee184c22801ab28237bd6",
+      "bytes": 47,
+      "source_relative_path": "requirements-upstream.txt",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "Dockerfile",
+      "sha256": "42863d8921dab33aa368703147970124df9ec4b77a53d7e5fd745a31e145af9e",
+      "bytes": 283,
+      "source_relative_path": "Dockerfile",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": ".dockerignore",
+      "sha256": "38c703b9594ea2cafd857a4fdc856fdb692659ad33462e732d75294e1b8dc138",
+      "bytes": 53,
+      "source_relative_path": ".dockerignore",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "assets/runner_bc.npz",
+      "sha256": "9f072aecf2e6785a439b541761d2b191ade467279c9885fb043909326139e7b9",
+      "bytes": 24394,
+      "source_relative_path": "assets/runner_bc.npz",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "assets/runner_bc.json",
+      "sha256": "be8b20d852fee68316d627683dc00d06bd93e1e72c7c1c63aa7996e249b9c2aa",
+      "bytes": 23811,
+      "source_relative_path": "assets/runner_bc.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "assets/runner_adversarial.npz",
+      "sha256": "714fc8918c2c5d9bf256a0ddc91e8ec905ebf25ca8fab34514faa78b70307a85",
+      "bytes": 23762,
+      "source_relative_path": "assets/runner_adversarial.npz",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "elimination/runs/jepa_seed11/policy.pt",
+      "sha256": "c88b3aaf771e3ca1593d945e61f16e86590be2a6ea19b82235936812d3db5ae1",
+      "bytes": 355011,
+      "source_relative_path": "elimination/runs/jepa_seed11/policy.pt",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "elimination/runs/baseline_seed23/policy.pt",
+      "sha256": "1f14e7c40e25f2785c7d35755cb0920d493ffbe510a5322d38e13f62e748942a",
+      "bytes": 156769,
+      "source_relative_path": "elimination/runs/baseline_seed23/policy.pt",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "elimination/runs/baseline_seed47/policy.pt",
+      "sha256": "577d87bb9cde1e42626ae7b34fe8f8ea3fbead1f87443b404da30383ed321561",
+      "bytes": 156769,
+      "source_relative_path": "elimination/runs/baseline_seed47/policy.pt",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "elimination/runs/jepa_seed23/policy.pt",
+      "sha256": "04bceb23258697cd817dbeacfdc07ad241e2767b11bfe53e49d147ed0802184f",
+      "bytes": 355011,
+      "source_relative_path": "elimination/runs/jepa_seed23/policy.pt",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "elimination/runs/jepa_seed47/policy.pt",
+      "sha256": "0ab47930e994906ceb7b1290f884e0831a2c8c686adca17333fad2bf81c31ab2",
+      "bytes": 355011,
+      "source_relative_path": "elimination/runs/jepa_seed47/policy.pt",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "elimination/runs/baseline_seed11/policy.pt",
+      "sha256": "91ddd0db8057164bba1e448aaa0e6e2462a957e3ba667f0c16f982d66c8bd83d",
+      "bytes": 156769,
+      "source_relative_path": "elimination/runs/baseline_seed11/policy.pt",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "elimination/RESULTS.md",
+      "sha256": "d45aa2124fd1b0d5ee844d1632d7bdb0d37e9b86e12d61e8e9cdda2b902bd3ff",
+      "bytes": 2488,
+      "source_relative_path": "elimination/RESULTS.md",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "elimination/comparison.json",
+      "sha256": "c16fa75d94f6bcfb939541c80e75bc963c1cdd17e84fa9b44c183b26517767c8",
+      "bytes": 35304,
+      "source_relative_path": "elimination/comparison.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "elimination/PROTOCOL.json",
+      "sha256": "29a4f199be6e75f00c108bf215e101bbd4c8e4c331bcbaab2b6bf6390e4e3995",
+      "bytes": 2425,
+      "source_relative_path": "elimination/PROTOCOL.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "paired_advantage/RESULTS.md",
+      "sha256": "769c69f91290087d0fddb8415b87096ba802c42080c467475ae46798d28f4061",
+      "bytes": 2668,
+      "source_relative_path": "paired_advantage/RESULTS.md",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "paired_advantage/report.html",
+      "sha256": "c2d73ceac8896c21344b5f11d0191f8fe56680e63eae9c2bf7c4a4e70c6769c9",
+      "bytes": 1114938,
+      "source_relative_path": "paired_advantage/report.html",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "paired_advantage/PROTOCOL.json",
+      "sha256": "b769dd515bba08ef608bff4df2c98c744b38eba35410a1400864f99fbc1a6105",
+      "bytes": 2504,
+      "source_relative_path": "paired_advantage/PROTOCOL.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "paired_advantage/validation.json",
+      "sha256": "31553fb30996b4bb84dabaf48de9eec07a94a53091313a3f033bea6a961b7546",
+      "bytes": 771,
+      "source_relative_path": "paired_advantage/validation.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "paired_advantage/FROZEN_SELECTION.json",
+      "sha256": "0e4140525250e6e0a8654978f7d59c40e718ca388d47b56b485f03673a14a6f3",
+      "bytes": 7955,
+      "source_relative_path": "paired_advantage/FROZEN_SELECTION.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "counterfactual/report.html",
+      "sha256": "69eb8e7a35d43d532a0bb0fd8ab8ed48d6e76d58b743d6a31d25e92f4b55bd17",
+      "bytes": 1871701,
+      "source_relative_path": "counterfactual/report.html",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "counterfactual/PROTOCOL.json",
+      "sha256": "7834edd631be6f7a1c064ee6d5742238517ec139ed5b16670e312ebda8f627f1",
+      "bytes": 4052,
+      "source_relative_path": "counterfactual/PROTOCOL.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "counterfactual/live_replay.html",
+      "sha256": "75de4909b26e6023eda1a2ebfef96bf5db43038d173d627a49edf7125096eb58",
+      "bytes": 211020,
+      "source_relative_path": "counterfactual/live_replay.html",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "counterfactual/live_replay.json",
+      "sha256": "d8d05a09eff6bcb5391de1071afb8e848c4a92e3bff2696276cfb93e718ba324",
+      "bytes": 1096,
+      "source_relative_path": "counterfactual/live_replay.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "counterfactual/live_replay_selection.json",
+      "sha256": "ffe7d12425be2bb6af9a62d14f62319dee3270037e8af73621c5f64ac9fd9c41",
+      "bytes": 273,
+      "source_relative_path": "counterfactual/live_replay_selection.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "VALIDATION.json",
+      "sha256": "52d6eda4eebe67b3239c5db79625edfa8336bff77e1a79e47ec0b59c7d3425d0",
+      "bytes": 2726,
+      "source_relative_path": "VALIDATION.json",
+      "copy": "verbatim recovery export"
+    },
+    {
+      "path": "examples/planning_replay.html",
+      "source_relative_path": "counterfactual/live_replay.html",
+      "sha256": "75de4909b26e6023eda1a2ebfef96bf5db43038d173d627a49edf7125096eb58",
+      "bytes": 211020,
+      "copy": "verbatim relocated replay"
+    },
+    {
+      "path": "examples/planning_replay.json",
+      "source_relative_path": "counterfactual/live_replay.json",
+      "sha256": "d8d05a09eff6bcb5391de1071afb8e848c4a92e3bff2696276cfb93e718ba324",
+      "bytes": 1096,
+      "copy": "verbatim relocated replay"
+    },
+    {
+      "path": "examples/planning_replay_selection.json",
+      "source_relative_path": "counterfactual/live_replay_selection.json",
+      "sha256": "ffe7d12425be2bb6af9a62d14f62319dee3270037e8af73621c5f64ac9fd9c41",
+      "bytes": 273,
+      "copy": "verbatim relocated replay"
+    }
+  ],
+  "omitted": [
+    "Large branch/root datasets",
+    "Optimizer and resumable latest.pt states",
+    "Historical intermediate checkpoint stacks",
+    "Training logs and raw per-branch arrays",
+    "Warmstart optimizer/model files",
+    "Original package manifest that describes the full omitted archive",
+    "Legacy release helpers requiring absent report_fonts or full archive assets",
+    "Counterfactual and paired-selector predictor weights; six retained policy.pt files support plain PPO-agent inference"
+  ],
+  "small_inference_assets_retained": "Six original policy.pt inference exports; no optimizer; tiny NumPy core runners",
+  "export_additions": [
+    {
+      "path": "docs/replay-preview.png",
+      "source": "Browser screenshot of actual recovered live replay, frame128 at8.53s; no new evaluation",
+      "sha256": "238183034c605063215339b69d9f0f4f001ca594be47508d84ee0b158e729276"
+    },
+    {
+      "path": "README.md",
+      "source": "New curated-export overview; original full recovery README retained separately"
+    },
+    {
+      "path": "PUBLICATION_VALIDATION.json",
+      "source": "Current publication tests and bounded demo checks; host paths removed",
+      "sha256": "4346eee3b1c3b0fdaf5e84a20d9955a7cce1d1d63782763819ec4f122824731d"
+    }
+  ],
+  "outer_recovery_archive_sha256": "42891ebb8609de343eb8210ca89636492ab4522f1a2ea0ada490586a4d3773b5",
+  "nested_v13_archive_sha256": "653e02d36ab7ccf1da5fdb686c7440464676163142b612eea97b023c835d5311",
+  "source_integrity_checks": {
+    "outer_manifest_files_verified": 727,
+    "original_v13_manifest_entries_verified": 2488,
+    "note": "Original v1.3 manifest does not cover subsequent overlay; copied subset is recorded separately above"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "description": "Feasibility-gated tight obstacles: hard combinations, same common runner and both treatments.",
+  "env": {"min_gap_seconds": 0.30, "ensure_reachable": true, "max_seconds": 60.0},
+  "training": {"train_motor": true, "updates": 500},
+  "experiment": {"runner": "bundled"}
+}

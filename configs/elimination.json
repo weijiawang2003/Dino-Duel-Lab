@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "description": "Elimination PPO versus multi-horizon JEPA; shared adversarial motor; harder reachable wide cactus. Reinitialized attack/value heads, retained shared encoder and motor. Final update 300.",
+  "env": {
+    "dt": 0.016666666666666666,
+    "action_repeat": 4,
+    "initial_speed": 8.0,
+    "initial_speed_jitter": 1.0,
+    "max_speed": 13.0,
+    "acceleration": 0.0,
+    "max_seconds": null,
+    "gravity": 20.0,
+    "jump_velocity": 8.0,
+    "player_width": 0.7,
+    "standing_height": 1.25,
+    "duck_height": 0.55,
+    "coins_per_meter": 1.0,
+    "initial_coins": 20.0,
+    "wallet_cap": 60.0,
+    "attack_cooldown": 0.3,
+    "attack_every_n_steps": 6,
+    "attack_costs": [
+      0.0,
+      10.0,
+      16.0,
+      18.0,
+      12.0
+    ],
+    "spawn_distance": 22.0,
+    "reaction_time": 0.8,
+    "min_gap_seconds": 0.3,
+    "natural_interval_min": 1.8,
+    "natural_interval_max": 3.0,
+    "natural_obstacles": false,
+    "shaping_coef": 0.0,
+    "ensure_reachable": true,
+    "wide_cactus_width": 2.2,
+    "wide_cactus_height": 1.2
+  },
+  "model": {
+    "hidden": 128,
+    "runner_hidden": 64,
+    "residual_motor": true,
+    "motor_logit_scale": 2.0,
+    "prediction_horizons": [
+      8,
+      32,
+      64
+    ]
+  },
+  "training": {
+    "updates": 300,
+    "num_envs": 8,
+    "rollout_steps": 256,
+    "epochs": 3,
+    "minibatch_size": 256,
+    "lr": 0.0003,
+    "gamma": 0.999,
+    "gae_lambda": 0.995,
+    "clip_coef": 0.2,
+    "entropy_coef": 0.03,
+    "value_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "aux_coef": 0.1,
+    "ema_tau": 0.99,
+    "checkpoint_interval": 100,
+    "snapshot_interval": 25,
+    "opponent_pool_size": 8,
+    "historical_opponent_prob": 0.35,
+    "opponent_style": "selfplay",
+    "device": "cpu",
+    "torch_threads": 1,
+    "train_motor": true,
+    "target_kl": 0.03,
+    "lr_decay_updates": 0,
+    "max_wall_seconds": 0.0,
+    "stop_file": "",
+    "bootstrap_time_limits": true,
+    "decision_only_actor": false,
+    "motor_entropy_coef": 0.001,
+    "motor_anchor_coef": 0.01,
+    "aux_batch_size": 64,
+    "scripted_opponent_prob": 0.25,
+    "scripted_opponent_styles": [
+      "random",
+      "aggressive",
+      "burst",
+      "cycle"
+    ],
+    "warm_start": "assets/warmstart/seed_11.pt",
+    "warm_start_heads": false
+  },
+  "bootstrap": {
+    "samples": 24000,
+    "synthetic_samples": 60000,
+    "epochs": 40,
+    "hidden": 64,
+    "batch_size": 512,
+    "lr": 0.001,
+    "dagger_rounds": 2,
+    "dagger_steps": 12000,
+    "seed": 20261025
+  },
+  "evaluation": {
+    "seed_start": 17179869184,
+    "num_seeds": 50,
+    "bootstrap_samples": 2000
+  },
+  "experiment": {
+    "variants": [
+      "baseline",
+      "jepa"
+    ],
+    "seeds": [
+      11,
+      23,
+      47
+    ],
+    "runner": "assets/runner_adversarial.npz",
+    "fixed_opponents": [
+      "teacher:random",
+      "teacher:aggressive",
+      "teacher:save",
+      "teacher:none"
+    ]
+  }
+}

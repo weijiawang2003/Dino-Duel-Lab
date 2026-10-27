@@ -1,0 +1,2 @@
+# Add-on diagnostics dependency; the bundled base project already pins NumPy/Torch.
+scikit-learn==1.8.0

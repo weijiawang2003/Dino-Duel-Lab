@@ -1,0 +1,11 @@
+{
+  "selection": "First method/opponent/seed/seat from the committed diagnostic, not selected by outcome or duration",
+  "exact_match_fields": [
+    "steps",
+    "winner_policy",
+    "seconds",
+    "left_attack_commands",
+    "right_attack_commands"
+  ],
+  "passed": true
+}

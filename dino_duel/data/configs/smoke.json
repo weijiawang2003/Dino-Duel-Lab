@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "description": "Integration check only. Results are NOT evidence of agent quality.",
+  "env": {"max_seconds": 8.0, "ensure_reachable": true, "min_gap_seconds": 0.30},
+  "model": {"hidden": 32},
+  "training": {"updates": 2, "num_envs": 2, "rollout_steps": 64, "epochs": 1,
+    "minibatch_size": 64, "device": "cpu", "checkpoint_interval": 1,
+    "snapshot_interval": 1, "opponent_pool_size": 2},
+  "evaluation": {"seed_start": 2147483648, "num_seeds": 3, "bootstrap_samples": 200},
+  "experiment": {"variants": ["baseline", "jepa", "jepa_shuffled"], "seeds": [11],
+    "fixed_opponents": ["teacher:random"]},
+  "bootstrap": {"samples": 1000, "synthetic_samples": 1000, "epochs": 2, "dagger_rounds": 0, "dagger_steps": 100}
+}

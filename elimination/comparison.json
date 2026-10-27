@@ -1,0 +1,1024 @@
+{
+  "schema": "dino_duel.elimination_report.v1",
+  "main": {
+    "joint": {
+      "games": 300,
+      "wins": 162,
+      "losses": 94,
+      "draws": 6,
+      "censored": 38,
+      "score_bounds": [
+        0.55,
+        0.6766666666666666
+      ],
+      "resolved_score": 0.6297709923664122,
+      "seconds_quantiles": {
+        "min": 2.3833333333333298,
+        "median": 17.191666666666972,
+        "p90": 300.0000000000558,
+        "max": 300.0000000000558
+      },
+      "games_beyond_60s": 96,
+      "bootstrap95_envelope": [
+        0.4,
+        0.81
+      ],
+      "duration_note": "Observed time, with administrative right censoring; not uncensored full match length.",
+      "uncertainty_note": "Crossed resampling of training-seed rows and shared environment-seed columns. Only three training seeds; censor envelope includes unknown outcomes, not a score estimate.",
+      "purchases": {
+        "left": {
+          "cactus": 6948,
+          "wide_cactus": 508,
+          "low_bird": 1126,
+          "high_bird": 5466
+        },
+        "right": {
+          "cactus": 6342,
+          "wide_cactus": 790,
+          "low_bird": 4290,
+          "high_bird": 960
+        }
+      },
+      "collision_sources": {
+        "player_0": 134,
+        "player_1": 134
+      }
+    },
+    "attack": {
+      "games": 300,
+      "wins": 164,
+      "losses": 88,
+      "draws": 10,
+      "censored": 38,
+      "score_bounds": [
+        0.5633333333333334,
+        0.69
+      ],
+      "resolved_score": 0.6450381679389313,
+      "seconds_quantiles": {
+        "min": 2.3833333333333298,
+        "median": 16.291666666667023,
+        "p90": 300.0000000000558,
+        "max": 300.0000000000558
+      },
+      "games_beyond_60s": 76,
+      "bootstrap95_envelope": [
+        0.36333333333333334,
+        0.86
+      ],
+      "duration_note": "Observed time, with administrative right censoring; not uncensored full match length.",
+      "uncertainty_note": "Crossed resampling of training-seed rows and shared environment-seed columns. Only three training seeds; censor envelope includes unknown outcomes, not a score estimate.",
+      "purchases": {
+        "left": {
+          "cactus": 6430,
+          "wide_cactus": 432,
+          "low_bird": 1044,
+          "high_bird": 5046
+        },
+        "right": {
+          "cactus": 6418,
+          "wide_cactus": 668,
+          "low_bird": 3632,
+          "high_bird": 962
+        }
+      },
+      "collision_sources": {
+        "player_0": 136,
+        "player_1": 136
+      }
+    },
+    "greedy": {
+      "games": 300,
+      "wins": 82,
+      "losses": 38,
+      "draws": 0,
+      "censored": 180,
+      "score_bounds": [
+        0.2733333333333333,
+        0.8733333333333333
+      ],
+      "resolved_score": 0.6833333333333333,
+      "seconds_quantiles": {
+        "min": 2.3833333333333298,
+        "median": 300.0000000000558,
+        "p90": 300.0000000000558,
+        "max": 300.0000000000558
+      },
+      "games_beyond_60s": 186,
+      "bootstrap95_envelope": [
+        0.0,
+        1.0
+      ],
+      "duration_note": "Observed time, with administrative right censoring; not uncensored full match length.",
+      "uncertainty_note": "Crossed resampling of training-seed rows and shared environment-seed columns. Only three training seeds; censor envelope includes unknown outcomes, not a score estimate.",
+      "purchases": {
+        "left": {
+          "cactus": 7948,
+          "wide_cactus": 8564,
+          "low_bird": 0,
+          "high_bird": 9926
+        },
+        "right": {
+          "cactus": 10102,
+          "wide_cactus": 9648,
+          "low_bird": 2370,
+          "high_bird": 0
+        }
+      },
+      "collision_sources": {
+        "player_1": 60,
+        "player_0": 60
+      }
+    },
+    "extended_joint": {
+      "games": 300,
+      "wins": 174,
+      "losses": 102,
+      "draws": 6,
+      "censored": 18,
+      "score_bounds": [
+        0.59,
+        0.65
+      ],
+      "resolved_score": 0.6276595744680851,
+      "seconds_quantiles": {
+        "min": 2.3833333333333298,
+        "median": 17.191666666666972,
+        "p90": 520.1149999998569,
+        "max": 899.9999999995101
+      },
+      "games_beyond_60s": 96,
+      "bootstrap95_envelope": [
+        0.4066666666666667,
+        0.8
+      ],
+      "duration_note": "Observed time, with administrative right censoring; not uncensored full match length.",
+      "uncertainty_note": "Crossed resampling of training-seed rows and shared environment-seed columns. Only three training seeds; censor envelope includes unknown outcomes, not a score estimate.",
+      "purchases": {
+        "left": {
+          "cactus": 12126,
+          "wide_cactus": 508,
+          "low_bird": 1944,
+          "high_bird": 9818
+        },
+        "right": {
+          "cactus": 10362,
+          "wide_cactus": 806,
+          "low_bird": 8288,
+          "high_bird": 1488
+        }
+      },
+      "collision_sources": {
+        "player_0": 144,
+        "player_1": 144
+      }
+    }
+  },
+  "diagnostics": {
+    "fixed/baseline/aggressive": {
+      "games": 120,
+      "wins": 102,
+      "losses": 2,
+      "draws": 0,
+      "censored": 16,
+      "score_bounds": [
+        0.85,
+        0.9833333333333333
+      ],
+      "resolved_score": 0.9807692307692307,
+      "seconds_quantiles": {
+        "min": 2.499999999999996,
+        "median": 23.458333333333282,
+        "p90": 300.0000000000558,
+        "max": 300.0000000000558
+      },
+      "games_beyond_60s": 36,
+      "bootstrap95_envelope": [
+        0.7,
+        1.0
+      ],
+      "duration_note": "Observed time, with administrative right censoring; not uncensored full match length.",
+      "uncertainty_note": "Crossed resampling of training-seed rows and shared environment-seed columns. Only three training seeds; censor envelope includes unknown outcomes, not a score estimate."
+    },
+    "fixed/baseline/burst": {
+      "games": 120,
+      "wins": 86,
+      "losses": 26,
+      "draws": 0,
+      "censored": 8,
+      "score_bounds": [
+        0.7166666666666667,
+        0.7833333333333333
+      ],
+      "resolved_score": 0.7678571428571429,
+      "seconds_quantiles": {
+        "min": 2.499999999999996,
+        "median": 11.90000000000017,
+        "p90": 200.81000000005213,
+        "max": 300.0000000000558
+      },
+      "games_beyond_60s": 26,
+      "bootstrap95_envelope": [
+        0.5166666666666667,
+        0.95
+      ],
+      "duration_note": "Observed time, with administrative right censoring; not uncensored full match length.",
+      "uncertainty_note": "Crossed resampling of training-seed rows and shared environment-seed columns. Only three training seeds; censor envelope includes unknown outcomes, not a score estimate."
+    },
+    "fixed/baseline/cycle": {
+      "games": 120,
+      "wins": 44,
+      "losses": 64,
+      "draws": 0,
+      "censored": 12,
+      "score_bounds": [
+        0.36666666666666664,
+        0.4666666666666667
+      ],
+      "resolved_score": 0.4074074074074074,
+      "seconds_quantiles": {
+        "min": 2.499999999999996,
+        "median": 6.016666666666651,
+        "p90": 179.1900000000284,
+        "max": 300.0000000000558
+      },
+      "games_beyond_60s": 28,
+      "bootstrap95_envelope": [
+        0.15,
+        0.6833333333333333
+      ],
+      "duration_note": "Observed time, with administrative right censoring; not uncensored full match length.",
+      "uncertainty_note": "Crossed resampling of training-seed rows and shared environment-seed columns. Only three training seeds; censor envelope includes unknown outcomes, not a score estimate."
+    },
+    "fixed/jepa/aggressive": {
+      "games": 120,
+      "wins": 108,
+      "losses": 0,
+      "draws": 0,
+      "censored": 12,
+      "score_bounds": [
+        0.9,
+        1.0
+      ],
+      "resolved_score": 1.0,
+      "seconds_quantiles": {
+        "min": 2.3999999999999964,
+        "median": 10.866666666666786,
+        "p90": 265.90500000008717,
+        "max": 300.0000000000558
+      },
+      "games_beyond_60s": 26,
+      "bootstrap95_envelope": [
+        0.7333333333333333,
+        1.0
+      ],
+      "duration_note": "Observed time, with administrative right censoring; not uncensored full match length.",
+      "uncertainty_note": "Crossed resampling of training-seed rows and shared environment-seed columns. Only three training seeds; censor envelope includes unknown outcomes, not a score estimate."
+    },
+    "fixed/jepa/burst": {
+      "games": 120,
+      "wins": 90,
+      "losses": 18,
+      "draws": 0,
+      "censored": 12,
+      "score_bounds": [
+        0.75,
+        0.85
+      ],
+      "resolved_score": 0.8333333333333334,
+      "seconds_quantiles": {
+        "min": 2.3999999999999964,
+        "median": 8.58333333333334,
+        "p90": 270.94500000008253,
+        "max": 300.0000000000558
+      },
+      "games_beyond_60s": 24,
+      "bootstrap95_envelope": [
+        0.5,
+        0.9833333333333333
+      ],
+      "duration_note": "Observed time, with administrative right censoring; not uncensored full match length.",
+      "uncertainty_note": "Crossed resampling of training-seed rows and shared environment-seed columns. Only three training seeds; censor envelope includes unknown outcomes, not a score estimate."
+    },
+    "fixed/jepa/cycle": {
+      "games": 120,
+      "wins": 74,
+      "losses": 32,
+      "draws": 2,
+      "censored": 12,
+      "score_bounds": [
+        0.625,
+        0.725
+      ],
+      "resolved_score": 0.6944444444444444,
+      "seconds_quantiles": {
+        "min": 2.3999999999999964,
+        "median": 5.2166666666666535,
+        "p90": 251.205000000085,
+        "max": 300.0000000000558
+      },
+      "games_beyond_60s": 28,
+      "bootstrap95_envelope": [
+        0.3,
+        0.95
+      ],
+      "duration_note": "Observed time, with administrative right censoring; not uncensored full match length.",
+      "uncertainty_note": "Crossed resampling of training-seed rows and shared environment-seed columns. Only three training seeds; censor envelope includes unknown outcomes, not a score estimate."
+    },
+    "unseen/baseline/wide": {
+      "games": 60,
+      "wins": 44,
+      "losses": 6,
+      "draws": 0,
+      "censored": 10,
+      "score_bounds": [
+        0.7333333333333333,
+        0.9
+      ],
+      "resolved_score": 0.88,
+      "seconds_quantiles": {
+        "min": 2.583333333333329,
+        "median": 26.44999999999978,
+        "p90": 300.0000000000558,
+        "max": 300.0000000000558
+      },
+      "games_beyond_60s": 20,
+      "bootstrap95_envelope": [
+        0.43333333333333335,
+        1.0
+      ],
+      "duration_note": "Observed time, with administrative right censoring; not uncensored full match length.",
+      "uncertainty_note": "Crossed resampling of training-seed rows and shared environment-seed columns. Only three training seeds; censor envelope includes unknown outcomes, not a score estimate."
+    },
+    "unseen/baseline/alternating": {
+      "games": 60,
+      "wins": 14,
+      "losses": 34,
+      "draws": 0,
+      "censored": 12,
+      "score_bounds": [
+        0.23333333333333334,
+        0.43333333333333335
+      ],
+      "resolved_score": 0.2916666666666667,
+      "seconds_quantiles": {
+        "min": 2.499999999999996,
+        "median": 7.19999999999998,
+        "p90": 300.0000000000558,
+        "max": 300.0000000000558
+      },
+      "games_beyond_60s": 16,
+      "bootstrap95_envelope": [
+        0.0,
+        0.7333333333333333
+      ],
+      "duration_note": "Observed time, with administrative right censoring; not uncensored full match length.",
+      "uncertainty_note": "Crossed resampling of training-seed rows and shared environment-seed columns. Only three training seeds; censor envelope includes unknown outcomes, not a score estimate."
+    },
+    "unseen/jepa/wide": {
+      "games": 60,
+      "wins": 36,
+      "losses": 8,
+      "draws": 0,
+      "censored": 16,
+      "score_bounds": [
+        0.6,
+        0.8666666666666667
+      ],
+      "resolved_score": 0.8181818181818182,
+      "seconds_quantiles": {
+        "min": 2.499999999999996,
+        "median": 6.858333333333315,
+        "p90": 300.0000000000558,
+        "max": 300.0000000000558
+      },
+      "games_beyond_60s": 16,
+      "bootstrap95_envelope": [
+        0.3,
+        1.0
+      ],
+      "duration_note": "Observed time, with administrative right censoring; not uncensored full match length.",
+      "uncertainty_note": "Crossed resampling of training-seed rows and shared environment-seed columns. Only three training seeds; censor envelope includes unknown outcomes, not a score estimate."
+    },
+    "unseen/jepa/alternating": {
+      "games": 60,
+      "wins": 10,
+      "losses": 22,
+      "draws": 12,
+      "censored": 16,
+      "score_bounds": [
+        0.26666666666666666,
+        0.5333333333333333
+      ],
+      "resolved_score": 0.36363636363636365,
+      "seconds_quantiles": {
+        "min": 2.499999999999996,
+        "median": 2.966666666666661,
+        "p90": 300.0000000000558,
+        "max": 300.0000000000558
+      },
+      "games_beyond_60s": 16,
+      "bootstrap95_envelope": [
+        0.03333333333333333,
+        0.8
+      ],
+      "duration_note": "Observed time, with administrative right censoring; not uncensored full match length.",
+      "uncertainty_note": "Crossed resampling of training-seed rows and shared environment-seed columns. Only three training seeds; censor envelope includes unknown outcomes, not a score estimate."
+    },
+    "defense/initial/wide": {
+      "games": 10,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "censored": 10,
+      "score_bounds": [
+        0.0,
+        1.0
+      ],
+      "resolved_score": null,
+      "seconds_quantiles": {
+        "min": 300.0000000000558,
+        "median": 300.0000000000558,
+        "p90": 300.0000000000558,
+        "max": 300.0000000000558
+      },
+      "games_beyond_60s": 10,
+      "bootstrap95_envelope": null,
+      "duration_note": "Observed time, with administrative right censoring; not uncensored full match length."
+    },
+    "defense/initial/alternating": {
+      "games": 10,
+      "wins": 0,
+      "losses": 4,
+      "draws": 0,
+      "censored": 6,
+      "score_bounds": [
+        0.0,
+        0.6
+      ],
+      "resolved_score": 0.0,
+      "seconds_quantiles": {
+        "min": 2.499999999999996,
+        "median": 300.0000000000558,
+        "p90": 300.0000000000558,
+        "max": 300.0000000000558
+      },
+      "games_beyond_60s": 6,
+      "bootstrap95_envelope": null,
+      "duration_note": "Observed time, with administrative right censoring; not uncensored full match length."
+    },
+    "defense/baseline/wide": {
+      "games": 30,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "censored": 30,
+      "score_bounds": [
+        0.0,
+        1.0
+      ],
+      "resolved_score": null,
+      "seconds_quantiles": {
+        "min": 300.0000000000558,
+        "median": 300.0000000000558,
+        "p90": 300.0000000000558,
+        "max": 300.0000000000558
+      },
+      "games_beyond_60s": 30,
+      "bootstrap95_envelope": [
+        0.0,
+        1.0
+      ],
+      "duration_note": "Observed time, with administrative right censoring; not uncensored full match length.",
+      "uncertainty_note": "Crossed resampling of training-seed rows and shared environment-seed columns. Only three training seeds; censor envelope includes unknown outcomes, not a score estimate."
+    },
+    "defense/baseline/alternating": {
+      "games": 30,
+      "wins": 0,
+      "losses": 14,
+      "draws": 0,
+      "censored": 16,
+      "score_bounds": [
+        0.0,
+        0.5333333333333333
+      ],
+      "resolved_score": 0.0,
+      "seconds_quantiles": {
+        "min": 2.499999999999996,
+        "median": 300.0000000000558,
+        "p90": 300.0000000000558,
+        "max": 300.0000000000558
+      },
+      "games_beyond_60s": 16,
+      "bootstrap95_envelope": [
+        0.0,
+        1.0
+      ],
+      "duration_note": "Observed time, with administrative right censoring; not uncensored full match length.",
+      "uncertainty_note": "Crossed resampling of training-seed rows and shared environment-seed columns. Only three training seeds; censor envelope includes unknown outcomes, not a score estimate."
+    },
+    "defense/jepa/wide": {
+      "games": 30,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "censored": 30,
+      "score_bounds": [
+        0.0,
+        1.0
+      ],
+      "resolved_score": null,
+      "seconds_quantiles": {
+        "min": 300.0000000000558,
+        "median": 300.0000000000558,
+        "p90": 300.0000000000558,
+        "max": 300.0000000000558
+      },
+      "games_beyond_60s": 30,
+      "bootstrap95_envelope": [
+        0.0,
+        1.0
+      ],
+      "duration_note": "Observed time, with administrative right censoring; not uncensored full match length.",
+      "uncertainty_note": "Crossed resampling of training-seed rows and shared environment-seed columns. Only three training seeds; censor envelope includes unknown outcomes, not a score estimate."
+    },
+    "defense/jepa/alternating": {
+      "games": 30,
+      "wins": 0,
+      "losses": 14,
+      "draws": 0,
+      "censored": 16,
+      "score_bounds": [
+        0.0,
+        0.5333333333333333
+      ],
+      "resolved_score": 0.0,
+      "seconds_quantiles": {
+        "min": 2.499999999999996,
+        "median": 300.0000000000558,
+        "p90": 300.0000000000558,
+        "max": 300.0000000000558
+      },
+      "games_beyond_60s": 16,
+      "bootstrap95_envelope": [
+        0.0,
+        1.0
+      ],
+      "duration_note": "Observed time, with administrative right censoring; not uncensored full match length.",
+      "uncertainty_note": "Crossed resampling of training-seed rows and shared environment-seed columns. Only three training seeds; censor envelope includes unknown outcomes, not a score estimate."
+    }
+  },
+  "training": [
+    {
+      "status": "complete",
+      "variant": "baseline",
+      "seed": 11,
+      "update": 300,
+      "target_updates": 300,
+      "global_step": 614400,
+      "agent_steps": 949461,
+      "checkpoint": "/mnt/data/dino_upgrade/dino-duel-lab/elimination/runs/baseline_seed11/latest.pt",
+      "policy": "/mnt/data/dino_upgrade/dino-duel-lab/elimination/runs/baseline_seed11/policy.pt",
+      "elapsed_seconds": 554.5063188370002,
+      "device": "cpu",
+      "parameter_count": 30540,
+      "trainable_parameter_count": 24585,
+      "acting_parameter_count": 30411,
+      "run_name": "baseline_seed11",
+      "policy_sha256": "91ddd0db8057164bba1e448aaa0e6e2462a957e3ba667f0c16f982d66c8bd83d",
+      "last_metrics": {
+        "update": 300,
+        "global_step": 614400,
+        "agent_steps": 949461,
+        "physics_steps": 2457600,
+        "elapsed_seconds": 554.4531935330003,
+        "variant": "baseline",
+        "seed": 11,
+        "device": "cpu",
+        "learning_rate": 0.0003,
+        "minibatches": 33,
+        "kl_early_stop": false,
+        "completed_episodes": 0,
+        "opponent_pool_size": 8,
+        "effective_decisions": 355,
+        "decision_fraction": 0.1260653409090909,
+        "actor_samples": 2816,
+        "parameter_count": 30540,
+        "trainable_parameter_count": 24585,
+        "acting_parameter_count": 30411,
+        "policy_loss": -0.0006591890458807801,
+        "value_loss": 0.0001048999238815723,
+        "entropy": 0.11912876344991452,
+        "motor_entropy": 0.014419008928322883,
+        "motor_anchor_kl": 0.00897222065991214,
+        "approx_kl": 0.0008059397593817928,
+        "clip_fraction": 0.010535037878787878,
+        "grad_norm": 0.15811896911173157,
+        "aux_loss": 0.0,
+        "prediction_loss": 0.0,
+        "variance_loss": 0.0,
+        "latent_std": 0.0
+      }
+    },
+    {
+      "status": "complete",
+      "variant": "baseline",
+      "seed": 23,
+      "update": 300,
+      "target_updates": 300,
+      "global_step": 614400,
+      "agent_steps": 930027,
+      "checkpoint": "/mnt/data/dino_upgrade/dino-duel-lab/elimination/runs/baseline_seed23/latest.pt",
+      "policy": "/mnt/data/dino_upgrade/dino-duel-lab/elimination/runs/baseline_seed23/policy.pt",
+      "elapsed_seconds": 530.743078905,
+      "device": "cpu",
+      "parameter_count": 30540,
+      "trainable_parameter_count": 24585,
+      "acting_parameter_count": 30411,
+      "run_name": "baseline_seed23",
+      "policy_sha256": "1f14e7c40e25f2785c7d35755cb0920d493ffbe510a5322d38e13f62e748942a",
+      "last_metrics": {
+        "update": 300,
+        "global_step": 614400,
+        "agent_steps": 930027,
+        "physics_steps": 2457600,
+        "elapsed_seconds": 530.709248572,
+        "variant": "baseline",
+        "seed": 23,
+        "device": "cpu",
+        "learning_rate": 0.0003,
+        "minibatches": 39,
+        "kl_early_stop": false,
+        "completed_episodes": 2,
+        "opponent_pool_size": 8,
+        "effective_decisions": 478,
+        "decision_fraction": 0.14362980769230768,
+        "actor_samples": 3328,
+        "parameter_count": 30540,
+        "trainable_parameter_count": 24585,
+        "acting_parameter_count": 30411,
+        "policy_loss": -0.0005291259298339868,
+        "value_loss": 0.03289568744217738,
+        "entropy": 0.10820300361284843,
+        "motor_entropy": 0.016359908124193166,
+        "motor_anchor_kl": 0.00703523657284677,
+        "approx_kl": 0.0008083342467076504,
+        "clip_fraction": 0.012720352564102564,
+        "grad_norm": 0.20198010223416182,
+        "aux_loss": 0.0,
+        "prediction_loss": 0.0,
+        "variance_loss": 0.0,
+        "latent_std": 0.0,
+        "mean_episode_return": 0.0,
+        "mean_abs_episode_return": 1.0,
+        "episode_length": 609.0,
+        "win_rate_seat0": 0.0,
+        "draw_rate": 0.0,
+        "time_limit_rate": 0.0
+      }
+    },
+    {
+      "status": "complete",
+      "variant": "baseline",
+      "seed": 47,
+      "update": 300,
+      "target_updates": 300,
+      "global_step": 614400,
+      "agent_steps": 1025963,
+      "checkpoint": "/mnt/data/dino_upgrade/dino-duel-lab/elimination/runs/baseline_seed47/latest.pt",
+      "policy": "/mnt/data/dino_upgrade/dino-duel-lab/elimination/runs/baseline_seed47/policy.pt",
+      "elapsed_seconds": 456.817760507,
+      "device": "cpu",
+      "parameter_count": 30540,
+      "trainable_parameter_count": 24585,
+      "acting_parameter_count": 30411,
+      "run_name": "baseline_seed47",
+      "policy_sha256": "577d87bb9cde1e42626ae7b34fe8f8ea3fbead1f87443b404da30383ed321561",
+      "last_metrics": {
+        "update": 300,
+        "global_step": 614400,
+        "agent_steps": 1025963,
+        "physics_steps": 2457600,
+        "elapsed_seconds": 456.7895022299999,
+        "variant": "baseline",
+        "seed": 47,
+        "device": "cpu",
+        "learning_rate": 0.0003,
+        "minibatches": 42,
+        "kl_early_stop": false,
+        "completed_episodes": 0,
+        "opponent_pool_size": 8,
+        "effective_decisions": 428,
+        "decision_fraction": 0.11941964285714286,
+        "actor_samples": 3584,
+        "parameter_count": 30540,
+        "trainable_parameter_count": 24585,
+        "acting_parameter_count": 30411,
+        "policy_loss": -0.0006522032920093764,
+        "value_loss": 2.0896175382880583e-05,
+        "entropy": 0.07549457101240045,
+        "motor_entropy": 0.009941004948424441,
+        "motor_anchor_kl": 0.0015035079002354039,
+        "approx_kl": 0.0005299279832148127,
+        "clip_fraction": 0.007533482142857143,
+        "grad_norm": 0.13661104218945616,
+        "aux_loss": 0.0,
+        "prediction_loss": 0.0,
+        "variance_loss": 0.0,
+        "latent_std": 0.0
+      }
+    },
+    {
+      "status": "complete",
+      "variant": "jepa",
+      "seed": 11,
+      "update": 300,
+      "target_updates": 300,
+      "global_step": 614400,
+      "agent_steps": 872413,
+      "checkpoint": "/mnt/data/dino_upgrade/dino-duel-lab/elimination/runs/jepa_seed11/latest.pt",
+      "policy": "/mnt/data/dino_upgrade/dino-duel-lab/elimination/runs/jepa_seed11/policy.pt",
+      "elapsed_seconds": 742.948389249,
+      "device": "cpu",
+      "parameter_count": 79372,
+      "trainable_parameter_count": 49993,
+      "acting_parameter_count": 30411,
+      "run_name": "jepa_seed11",
+      "policy_sha256": "c88b3aaf771e3ca1593d945e61f16e86590be2a6ea19b82235936812d3db5ae1",
+      "last_metrics": {
+        "update": 300,
+        "global_step": 614400,
+        "agent_steps": 872413,
+        "physics_steps": 2457600,
+        "elapsed_seconds": 742.896898873,
+        "variant": "jepa",
+        "seed": 11,
+        "device": "cpu",
+        "learning_rate": 0.0003,
+        "minibatches": 39,
+        "kl_early_stop": false,
+        "completed_episodes": 2,
+        "opponent_pool_size": 8,
+        "effective_decisions": 453,
+        "decision_fraction": 0.14007421150278293,
+        "actor_samples": 3234,
+        "parameter_count": 79372,
+        "trainable_parameter_count": 49993,
+        "acting_parameter_count": 30411,
+        "policy_loss": -0.0020009100628204835,
+        "value_loss": 0.028051399315396946,
+        "entropy": 0.09391227536476575,
+        "motor_entropy": 0.0120463052060073,
+        "motor_anchor_kl": 0.005538588231548858,
+        "approx_kl": 0.0006316222977311087,
+        "clip_fraction": 0.007169495885952925,
+        "grad_norm": 0.16741818208725023,
+        "aux_loss": 0.06708696341285339,
+        "prediction_loss": 0.06240727905279551,
+        "variance_loss": 0.04679683777384269,
+        "latent_std": 0.545576206384561,
+        "prediction_h8": 0.06070826708888396,
+        "prediction_h32": 0.06302736460780486,
+        "prediction_h64": 0.06348620221400872,
+        "mean_episode_return": 0.0,
+        "mean_abs_episode_return": 1.0,
+        "episode_length": 660.5,
+        "win_rate_seat0": 1.0,
+        "draw_rate": 0.0,
+        "time_limit_rate": 0.0
+      }
+    },
+    {
+      "status": "complete",
+      "variant": "jepa",
+      "seed": 23,
+      "update": 300,
+      "target_updates": 300,
+      "global_step": 614400,
+      "agent_steps": 793269,
+      "checkpoint": "/mnt/data/dino_upgrade/dino-duel-lab/elimination/runs/jepa_seed23/latest.pt",
+      "policy": "/mnt/data/dino_upgrade/dino-duel-lab/elimination/runs/jepa_seed23/policy.pt",
+      "elapsed_seconds": 648.3468158850001,
+      "device": "cpu",
+      "parameter_count": 79372,
+      "trainable_parameter_count": 49993,
+      "acting_parameter_count": 30411,
+      "run_name": "jepa_seed23",
+      "policy_sha256": "04bceb23258697cd817dbeacfdc07ad241e2767b11bfe53e49d147ed0802184f",
+      "last_metrics": {
+        "update": 300,
+        "global_step": 614400,
+        "agent_steps": 793269,
+        "physics_steps": 2457600,
+        "elapsed_seconds": 648.296622204,
+        "variant": "jepa",
+        "seed": 23,
+        "device": "cpu",
+        "learning_rate": 0.0003,
+        "minibatches": 30,
+        "kl_early_stop": false,
+        "completed_episodes": 0,
+        "opponent_pool_size": 8,
+        "effective_decisions": 207,
+        "decision_fraction": 0.080859375,
+        "actor_samples": 2560,
+        "parameter_count": 79372,
+        "trainable_parameter_count": 49993,
+        "acting_parameter_count": 30411,
+        "policy_loss": -0.0013289080932736396,
+        "value_loss": 0.0001072276051369651,
+        "entropy": 0.06330312055846056,
+        "motor_entropy": 0.008217633123664806,
+        "motor_anchor_kl": 0.013406929435829322,
+        "approx_kl": 0.00040611340664327146,
+        "clip_fraction": 0.0037760416666666667,
+        "grad_norm": 0.149311692516009,
+        "aux_loss": 0.07316413223743438,
+        "prediction_loss": 0.07053986676037312,
+        "variance_loss": 0.02624265570193529,
+        "latent_std": 0.5404321759939194,
+        "prediction_h8": 0.06820226485530535,
+        "prediction_h32": 0.06860716976225376,
+        "prediction_h64": 0.07481016765038172
+      }
+    },
+    {
+      "status": "complete",
+      "variant": "jepa",
+      "seed": 47,
+      "update": 300,
+      "target_updates": 300,
+      "global_step": 614400,
+      "agent_steps": 933877,
+      "checkpoint": "/mnt/data/dino_upgrade/dino-duel-lab/elimination/runs/jepa_seed47/latest.pt",
+      "policy": "/mnt/data/dino_upgrade/dino-duel-lab/elimination/runs/jepa_seed47/policy.pt",
+      "elapsed_seconds": 590.531981138,
+      "device": "cpu",
+      "parameter_count": 79372,
+      "trainable_parameter_count": 49993,
+      "acting_parameter_count": 30411,
+      "run_name": "jepa_seed47",
+      "policy_sha256": "0ab47930e994906ceb7b1290f884e0831a2c8c686adca17333fad2bf81c31ab2",
+      "last_metrics": {
+        "update": 300,
+        "global_step": 614400,
+        "agent_steps": 933877,
+        "physics_steps": 2457600,
+        "elapsed_seconds": 590.4883210900002,
+        "variant": "jepa",
+        "seed": 47,
+        "device": "cpu",
+        "learning_rate": 0.0003,
+        "minibatches": 42,
+        "kl_early_stop": false,
+        "completed_episodes": 0,
+        "opponent_pool_size": 8,
+        "effective_decisions": 333,
+        "decision_fraction": 0.09291294642857142,
+        "actor_samples": 3584,
+        "parameter_count": 79372,
+        "trainable_parameter_count": 49993,
+        "acting_parameter_count": 30411,
+        "policy_loss": -0.00040917027564275833,
+        "value_loss": 0.00045985677917044433,
+        "entropy": 0.05383260020365318,
+        "motor_entropy": 0.010145959571846538,
+        "motor_anchor_kl": 0.012269793560595385,
+        "approx_kl": 0.0002001133893610954,
+        "clip_fraction": 0.0020461309523809525,
+        "grad_norm": 0.15190742368854226,
+        "aux_loss": 0.06385138896959168,
+        "prediction_loss": 0.06173729497407164,
+        "variance_loss": 0.021140940265641325,
+        "latent_std": 0.5753510296344757,
+        "prediction_h8": 0.0615345375346286,
+        "prediction_h32": 0.05787690143500056,
+        "prediction_h64": 0.06580044471082233
+      }
+    }
+  ],
+  "evaluated_games": 3920,
+  "uncertainty": "Three trained seeds, exploratory result. Unknown games are NOT draws. No official pretrained JEPA or latent planner.",
+  "prediction_diagnostics": [
+    {
+      "seed": 11,
+      "episodes": 10,
+      "window_candidates": 4297,
+      "selected_windows": 512,
+      "horizons": [
+        {
+          "horizon_steps": 8,
+          "horizon_seconds": 0.5333333333333333,
+          "windows": 512,
+          "learned_huber": 0.06457275152206421,
+          "persistence_huber": 0.1123543381690979,
+          "shuffled_actions_huber": 0.1201757937669754,
+          "relative_improvement_vs_persistence": 0.42527584983074207
+        },
+        {
+          "horizon_steps": 32,
+          "horizon_seconds": 2.1333333333333333,
+          "windows": 481,
+          "learned_huber": 0.06430241465568542,
+          "persistence_huber": 0.2822442948818207,
+          "shuffled_actions_huber": 0.28464674949645996,
+          "relative_improvement_vs_persistence": 0.7721746167354431
+        },
+        {
+          "horizon_steps": 64,
+          "horizon_seconds": 4.266666666666667,
+          "windows": 447,
+          "learned_huber": 0.06405558437108994,
+          "persistence_huber": 0.4083060026168823,
+          "shuffled_actions_huber": 0.4350811541080475,
+          "relative_improvement_vs_persistence": 0.8431186806940139
+        }
+      ],
+      "target_latent_std": 0.5922747254371643,
+      "policy_sha256": "c88b3aaf771e3ca1593d945e61f16e86590be2a6ea19b82235936812d3db5ae1",
+      "environment_seed_start": 137438953472,
+      "oracle_future_actions": true,
+      "limitations": "Frozen forecast diagnostic with actual future joint actions. No future information enters acting policies. Shuffling tests action conditioning, not off-policy causal validity. Overlapping windows are correlated; scores are not independent trial statistics. Different models have different latent spaces."
+    },
+    {
+      "seed": 23,
+      "episodes": 10,
+      "window_candidates": 8124,
+      "selected_windows": 512,
+      "horizons": [
+        {
+          "horizon_steps": 8,
+          "horizon_seconds": 0.5333333333333333,
+          "windows": 512,
+          "learned_huber": 0.0780884325504303,
+          "persistence_huber": 0.21292568743228912,
+          "shuffled_actions_huber": 0.20908057689666748,
+          "relative_improvement_vs_persistence": 0.6332596903073866
+        },
+        {
+          "horizon_steps": 32,
+          "horizon_seconds": 2.1333333333333333,
+          "windows": 503,
+          "learned_huber": 0.08287990093231201,
+          "persistence_huber": 0.3778022825717926,
+          "shuffled_actions_huber": 0.30174800753593445,
+          "relative_improvement_vs_persistence": 0.7806262567602074
+        },
+        {
+          "horizon_steps": 64,
+          "horizon_seconds": 4.266666666666667,
+          "windows": 489,
+          "learned_huber": 0.09998776763677597,
+          "persistence_huber": 0.3588479459285736,
+          "shuffled_actions_huber": 0.34167879819869995,
+          "relative_improvement_vs_persistence": 0.7213645256404007
+        }
+      ],
+      "target_latent_std": 0.6040393114089966,
+      "policy_sha256": "04bceb23258697cd817dbeacfdc07ad241e2767b11bfe53e49d147ed0802184f",
+      "environment_seed_start": 137438953472,
+      "oracle_future_actions": true,
+      "limitations": "Frozen forecast diagnostic with actual future joint actions. No future information enters acting policies. Shuffling tests action conditioning, not off-policy causal validity. Overlapping windows are correlated; scores are not independent trial statistics. Different models have different latent spaces."
+    },
+    {
+      "seed": 47,
+      "episodes": 10,
+      "window_candidates": 8977,
+      "selected_windows": 512,
+      "horizons": [
+        {
+          "horizon_steps": 8,
+          "horizon_seconds": 0.5333333333333333,
+          "windows": 512,
+          "learned_huber": 0.06835492700338364,
+          "persistence_huber": 0.18296341598033905,
+          "shuffled_actions_huber": 0.19053655862808228,
+          "relative_improvement_vs_persistence": 0.6264011215732388
+        },
+        {
+          "horizon_steps": 32,
+          "horizon_seconds": 2.1333333333333333,
+          "windows": 494,
+          "learned_huber": 0.06951577216386795,
+          "persistence_huber": 0.3045949637889862,
+          "shuffled_actions_huber": 0.3037104308605194,
+          "relative_improvement_vs_persistence": 0.7717763573660847
+        },
+        {
+          "horizon_steps": 64,
+          "horizon_seconds": 4.266666666666667,
+          "windows": 484,
+          "learned_huber": 0.0788877084851265,
+          "persistence_huber": 0.32843413949012756,
+          "shuffled_actions_huber": 0.3424191474914551,
+          "relative_improvement_vs_persistence": 0.7598066126511864
+        }
+      ],
+      "target_latent_std": 0.5568059086799622,
+      "policy_sha256": "0ab47930e994906ceb7b1290f884e0831a2c8c686adca17333fad2bf81c31ab2",
+      "environment_seed_start": 137438953472,
+      "oracle_future_actions": true,
+      "limitations": "Frozen forecast diagnostic with actual future joint actions. No future information enters acting policies. Shuffling tests action conditioning, not off-policy causal validity. Overlapping windows are correlated; scores are not independent trial statistics. Different models have different latent spaces."
+    }
+  ]
+}

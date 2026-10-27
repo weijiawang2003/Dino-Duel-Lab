@@ -1,0 +1,98 @@
+{
+  "schema": "dino_duel.validation.v1.3",
+  "recorded_utc": "2026-10-26T00:09:48.606165+00:00",
+  "source_archive_sha256": "b691398d11748cc28cbfa8cfafa971c6fe8629a39332ecf9c2cd223cb64eb9d7",
+  "scope": "Counterfactual predictor fitting and deployment diagnostics. No new full PPO self-play run.",
+  "unit_tests": {
+    "tests": 106,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "runtime": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "torch": "2.10.0+cpu",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.41"
+  },
+  "dataset": {
+    "independent_source_roots": 864,
+    "candidate_branches": 52224,
+    "actual_branch_environment_steps": 4636725,
+    "source_trajectory_steps": 192103
+  },
+  "predictor_training": {
+    "fits": 12,
+    "fitting_seeds": [
+      101,
+      202,
+      303
+    ],
+    "epochs_each": 60,
+    "checkpoint_selection": "Minimum validation-only outcome NLL",
+    "latent_targets": "Frozen v1.2 JEPA seed11 encoder",
+    "actor_weights_unchanged": true,
+    "equal_FLOPs_claim": false
+  },
+  "full_duel_evaluation": {
+    "games": 512,
+    "actual_environment_steps": 1083112,
+    "prospective_commit1_games": 256,
+    "posthoc_commit20_games": 256,
+    "unresolved_never_draw": true,
+    "game_time_limit": null,
+    "observation_budget_seconds": 300
+  },
+  "resume_predictor": {
+    "epoch_interrupted_at": 10,
+    "epoch_resumed_to": 12,
+    "continuous_epochs": 12,
+    "max_absolute_parameter_difference": 0.0,
+    "bitwise_equal": true,
+    "dataset": "Tiny development fixture, NOT research results"
+  },
+  "resume_legacy": {
+    "source_update": 300,
+    "resumed_update": 301,
+    "source_sha256": "8df3319f5abee41718035f50b0875355d515e02e67cc296cd5f83533662b800c",
+    "source_unchanged": true,
+    "resumed_model_config": {
+      "obs_dim": 53,
+      "n_attacks": 5,
+      "hidden": 128,
+      "variant": "jepa",
+      "train_motor": true,
+      "runner_hidden": 64,
+      "prediction_horizons": [
+        8,
+        32,
+        64
+      ],
+      "residual_motor": true,
+      "motor_logit_scale": 2.0,
+      "predictor_fusion": "linear"
+    }
+  },
+  "browser": {
+    "browser": "Chromium via Playwright, local HTML set_content",
+    "desktop_viewport": [
+      1440,
+      1100
+    ],
+    "mobile_viewport": [
+      390,
+      844
+    ],
+    "no_body_horizontal_overflow": true,
+    "javascript_errors": [],
+    "replay_controls_checked": [
+      "play",
+      "timeline seek",
+      "restart"
+    ],
+    "tables": 5,
+    "remote_resources": false
+  },
+  "artifact_validation_file": "counterfactual/artifact_validation.json",
+  "packaging_note": "Per-file hashes in MANIFEST.json; extraction check and clean-copy tests are recorded in the separate release check."
+}

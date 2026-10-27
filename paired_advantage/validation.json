@@ -1,0 +1,21 @@
+{
+  "tests_passed": 120,
+  "test_log_sha256": "97099fcfbd4ed566e72457793132d64d7c910cb811dc7ad1f6f9de808c1e1fbe",
+  "fresh_roots": 128,
+  "fresh_source_seeds_disjoint_from_all_v13_roots": true,
+  "weights_unchanged_since_freeze": true,
+  "complete_duels": 384,
+  "source_archive_members_checked": 2489,
+  "source_archive_files_modified": [],
+  "online_protocol_frozen_before_new_offline_scores": true,
+  "selected_case_replays_exact": true,
+  "versions": {
+    "numpy": "2.3.5",
+    "torch": "2.10.0+cpu",
+    "scikit-learn": "1.8.0",
+    "pytest": "9.0.2"
+  },
+  "python": "3.13.5",
+  "device": "CPU; no CUDA used",
+  "note": "Bootstrap intervals are exploratory and conditional on this fixed pretrained population; no unbounded storage or background compute promise."
+}

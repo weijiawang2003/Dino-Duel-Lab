@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "description": "Actual CPU training run: longer credit assignment and decision-only PPO actor updates; common frozen BC motor policy.",
+  "training": {
+    "updates": 300,
+    "num_envs": 8,
+    "rollout_steps": 256,
+    "epochs": 4,
+    "minibatch_size": 256,
+    "lr": 0.0003,
+    "gamma": 0.999,
+    "gae_lambda": 0.995,
+    "entropy_coef": 0.015,
+    "decision_only_actor": true,
+    "checkpoint_interval": 50,
+    "snapshot_interval": 25,
+    "opponent_pool_size": 8,
+    "historical_opponent_prob": 0.35,
+    "opponent_style": "selfplay",
+    "target_kl": 0.03,
+    "device": "cpu",
+    "torch_threads": 1,
+    "train_motor": false
+  },
+  "evaluation": {
+    "seed_start": 17179869184,
+    "num_seeds": 50,
+    "bootstrap_samples": 2000
+  },
+  "experiment": {
+    "variants": ["baseline", "jepa"],
+    "seeds": [11, 23, 47],
+    "runner": "bundled",
+    "fixed_opponents": ["teacher:random", "teacher:aggressive", "teacher:save", "teacher:none"]
+  }
+}

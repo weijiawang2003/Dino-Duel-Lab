@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "description": "Research starting budget; use multiple seeds, validation and held-out evaluation.",
+  "training": {"updates": 1000, "num_envs": 16, "rollout_steps": 256,
+    "epochs": 4, "minibatch_size": 1024, "checkpoint_interval": 25,
+    "snapshot_interval": 50, "opponent_pool_size": 12},
+  "evaluation": {"num_seeds": 100, "bootstrap_samples": 5000},
+  "experiment": {"variants": ["baseline", "jepa", "jepa_shuffled", "baseline_large"],
+    "seeds": [11, 23, 47, 89, 131]}
+}

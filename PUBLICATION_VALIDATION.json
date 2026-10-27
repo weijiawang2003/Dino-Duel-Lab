@@ -1,0 +1,48 @@
+{
+  "verification_date": "2026-10-26",
+  "kind": "curated publication verification, not historical study replication",
+  "environment": {
+    "environment": "Fresh isolated editable install from project pinned deps",
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "torch": "2.10.0",
+    "pytest": "9.1.1",
+    "passed": 120,
+    "skipped": 0,
+    "seconds": 13.55
+  },
+  "core_demo": {
+    "seconds": 10,
+    "frames": 151,
+    "scripted_policies_with_original_numpy_runner": true,
+    "reason": "legacy timed demo time_limit"
+  },
+  "trained_policy_demo": {
+    "seconds": 10,
+    "frames": 151,
+    "left": "jepa seed11 joint",
+    "right": "baseline seed11 joint",
+    "censored": true,
+    "score": null,
+    "reason": "evaluation_budget",
+    "checkpoint_env_used": true,
+    "config": "configs/elimination.json"
+  },
+  "portable_assets": {
+    "original_inference_policy_files": 6,
+    "inference_policies_bytes": 1535340,
+    "weights_only_load_passed": true,
+    "optimizer_state_absent": true,
+    "numpy_runner_files_retained": true,
+    "replay_external_resource_count": 0
+  },
+  "research_scope": [
+    "No original full PPO retraining or historical research evaluation regeneration",
+    "Tests include their existing tiny optimization/resume fixtures",
+    "Historical 46W10L8unresolved is raw latent_aux selector against fixed opponents, not new JEPA-PPO or head-to-head result",
+    "Validation gates rejected all neural selectors",
+    "Six shipped full policies come from earlier v1.2 training",
+    "Datasets, optimizer/resume states and tree pickle omitted"
+  ],
+  "documentation_fix": "README uses explicit configs/elimination.json because bare elimination preset name collides with existing elimination directory; original loader unchanged"
+}

@@ -1,0 +1,4 @@
+gymnasium==1.0.0
+pygame==2.6.1
+Pillow==11.0.0
+

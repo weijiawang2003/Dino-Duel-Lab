@@ -1,0 +1,66 @@
+{
+  "status": "frozen_before_heldout_evaluation",
+  "design": "Exploratory development; not prospective preregistration",
+  "updates_per_run": 300,
+  "steps_per_run": 614400,
+  "training_seeds": [
+    11,
+    23,
+    47
+  ],
+  "variants": [
+    "baseline",
+    "jepa"
+  ],
+  "primary_execution": "joint",
+  "secondary_execution": [
+    "attack",
+    "greedy"
+  ],
+  "evaluation_seed_start": 68719476736,
+  "primary_environment_seeds": 50,
+  "swap_seats": true,
+  "observation_budget_seconds": 300,
+  "extension_budget_seconds": 900,
+  "game_time_limit": null,
+  "horizons_steps": [
+    8,
+    32,
+    64
+  ],
+  "horizons_seconds": [
+    0.5333333333333333,
+    2.1333333333333333,
+    4.266666666666667
+  ],
+  "checkpoint_selection": "Fixed final update 300; no selection on heldout score",
+  "bootstrap": "Crossed training-seed and environment-seed resampling, preserving paired seats; censor identification bounds",
+  "scripted_training_styles": [
+    "random",
+    "aggressive",
+    "burst",
+    "cycle"
+  ],
+  "common_motor": "assets/runner_adversarial.npz",
+  "common_motor_sha256": "714fc8918c2c5d9bf256a0ddc91e8ec905ebf25ca8fab34514faa78b70307a85",
+  "warmstart": "Matched seed original baseline encoder; NEW shared viability-distilled motor; attack/value/residual heads reset, identical between variants",
+  "development_history": [
+    "weak original motor loses to burst; abandoned",
+    "distilled motor solves original geometry, no terminal learning signal; abandoned",
+    "increased wide cactus geometry to2.2x1.2 with exact feasibility guard; reset attack/value heads to avoid stale spam tactic",
+    "seed11 first40updates retained for both variants as same-config pilot; exploratory hyperparameter choice used training seed11"
+  ],
+  "shared_teacher_privilege": "Offline teacher sees the full already-revealed queue; student sees first3; no future purchases. Identical teacher for both arms.",
+  "compute_fairness": "Equal environment interaction and acting parameter count, NOT equal training FLOPs/time",
+  "not_implemented": [
+    "official pretrained visual JEPA",
+    "inference-time latent planning",
+    "guaranteed finite game termination"
+  ],
+  "runtime": {
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "torch": "2.10.0+cpu",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.41"
+  },
+  "config_sha256": "ae9dd82f096c1de95c26f776825d5a411c8a92a61942c87604c24b475508ccd0"
+}
